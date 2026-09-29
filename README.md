@@ -1,74 +1,76 @@
-# Vito Taxi by Charbel — the site
+# Vito Taxi by Charbel
 
-Planned address: **https://vitotaxi.cierp.uk/** (Arabic: **/ar/**)
+**Your comfort, our priority.** The website for Vito Taxi by Charbel, a 24/7 Mercedes-Benz Vito taxi
+based in Antelias, Lebanon.
 
-A static site made of plain HTML, one stylesheet, one small script and self-hosted fonts.
-It has no framework, no trackers, no cookies and no backend. The pages are generated
-once by `tools/build.py` and then committed, and GitHub Pages serves them exactly as they are.
+Live address: **https://vitotaxi.cierp.uk/** · Arabic: **/ar/**
 
-## What's on it
+## What's on the site
 
-- **Homepage, English and Arabic:** the hero with the animated Vito scene, services, the car,
-  a booking form, the Google rating, areas, FAQ and a closing call to action. There is also a floating
-  WhatsApp button, and on phones a Call/WhatsApp dock.
-- **Booking form:** it writes a WhatsApp message to 70 609 211 containing the trip type, pickup,
-  destination, date and time, passengers, bags, flight number, name and notes. Nothing is stored or sent anywhere else.
-- **Nine area pages in both languages (18 pages).** They exist to rank for local searches:
-  Antelias, Beirut Airport, Beirut, Jounieh, Byblos, Metn, Batroun, Faraya, and private driver/day trips.
+- **Cinematic homepage in English and Arabic:**
+  - a full-screen night photo of a Mercedes Vito, with a floating glass "Where to?" booking card
+  - bento tiles: 4.9★ Google, 24/7, the car, 9 regions, pricing, airport, drivers
+  - photo service cards and a scroll-driven horizontal destinations gallery
+  - a booking form, the Google rating, the FAQ, and a closing call to action
+- **Premium WhatsApp button:** a glass pill with a rotating gold ring. It expands to "Chat on WhatsApp · Available 24/7",
+  and a greeting bubble appears once per visit. Phones also get a gold call button.
+- **Motion:** a logo preloader, headline reveals, parallax photos, smooth scrolling, a gold cursor and magnetic buttons.
+  All of it switches off for visitors who ask their device for reduced motion.
+- **Nine area pages in both languages:** Antelias, Beirut Airport, Beirut, Jounieh, Byblos, Metn, Batroun, Faraya,
+  and private driver. Each has its own photo, copy, FAQ and booking links.
+- **Booking:** every form writes a ready-made WhatsApp message to **+961 70 609 211**. Nothing is stored on the site.
 
-## SEO in place
+## SEO
 
-- Every page has its own `<title>`, meta description and canonical URL, plus `hreflang`
-  links for en, ar and x-default.
-- Open Graph and Twitter cards, using a designed `og.png` (1200×630).
-- JSON-LD structured data: `LocalBusiness` (address, geo, phone, 24/7 hours, Instagram,
-  Facebook and Google Maps in `sameAs`), `TaxiService`, `WebSite`/`WebPage` and `FAQPage`.
-  Area pages also carry `BreadcrumbList`.
-- `sitemap.xml` with hreflang pairs, `robots.txt`, a web manifest, app icons and a `.vcf` contact card.
-- Geo meta tags for Antelias, one `h1` per page, semantic sections and a fully bilingual RTL layout.
-- The page is fast: CSS and JS are about 40 KB combined, fonts are preloaded, and there are no third-party requests.
+- **Page metadata:** every page has a unique title and description, a canonical URL, and `hreflang` for en, ar and x-default.
+- **Share previews:** Open Graph and Twitter cards with a designed `og.jpg`.
+- **Structured data:**
+  - `LocalBusiness`: address, geo, phone, 24/7 hours, slogan, and Instagram, Facebook and Google Maps in `sameAs`.
+  - `TaxiService` per area, `WebSite`, `WebPage`, `FAQPage`, and `BreadcrumbList`.
+- **Crawling:** `sitemap.xml` with language alternates and image entries, and `robots.txt`.
+- **App and contact files:** a manifest, icons, and a vCard contact file.
+- **Speed:**
+  - WebP photos, lazy-loaded below the fold, with the hero image preloaded.
+  - Self-hosted fonts and scripts, so there are no third-party requests.
 
-The Google rating (4.9 from 17 reviews) is shown on the page with a link to the listing, but it is
-deliberately **not** in the structured data. Google ignores self-published review markup on a
-business's own site and can penalise it. Update `rating`, `reviews` and `rating_asof` in CFG as it changes.
+## Changing things
 
-## Changing anything
+| What | Where |
+|---|---|
+| Phone, WhatsApp, links, rating | `CFG` in `tools/content.py` |
+| All English and Arabic copy, FAQ | `T` in `tools/content.py` |
+| Areas (add or remove one) | `AREAS` in `tools/content.py` |
+| Layout, extra homepage words, which photo goes where | `tools/pages.py` |
+| Design | `assets/site.css` · behaviour: `assets/site.js` |
 
-All copy, the phone number, links and areas are in **`tools/build.py`**, in the `CFG`, `T` (en/ar) and
-`AREAS` blocks. After editing, run:
+After any change, run:
 
-    python3 tools/build.py
+    python3 tools/pages.py
 
-Do not edit the generated `.html` files by hand, because the next build overwrites them.
-Styles live in `assets/site.css` and behaviour in `assets/site.js`.
+Never edit the generated `.html` files by hand, because the next run overwrites them. If the logo or the hero photo changes, also run:
 
-To regenerate `og.png` and the icons after a design change:
-
-    NODE_PATH=$(npm root -g) node tools/render-images.js
+    NODE_PATH=$(npm root -g) node tools/render-images.js      # og.jpg, icons, favicon
 
 ## Photos
 
-The car, skyline and logo artwork are hand-drawn SVG, so the site looks finished with no photos at all.
-Real photos still sell better, though. Drop them into `photos/` (see `photos/README.md`) and a gallery
-appears automatically.
-
-## Before sending the link to customers
-
-1. Check that **70 609 211 is on WhatsApp**, because all booking goes to it (`CFG['wa']`).
-2. Check the areas. The nine area pages are places a taxi from Antelias normally serves. If any
-   should not be advertised, delete its entry in `AREAS` and rebuild.
-3. **Voices.** Real customer quotes, used with permission, go in `CFG['voices']`. The section only
-   appears once there is at least one. Never invent them.
+- **Car photography:** Unsplash, under the Unsplash License. The photos show the car model; they are not Vito Taxi's own vehicle.
+- **Lebanon photography:** Wikimedia Commons, under Creative Commons licences, credited on `/credits/`
+  as those licences require. `tools/photo-credits.json` lists every one.
+- **Charbel's own photos:** drop them into `photos/` as `vito-1.jpg`, `vito-2.jpg` or `vito-3.jpg` and they
+  appear automatically as a gallery under "The Vito". Real photos of the car and drivers will always convert best.
 
 ## Deploying on vitotaxi.cierp.uk
 
-It uses the same setup as Joy Taxi:
+1. **GitHub → Settings → Pages:** deploy from the branch holding these files, root folder. `CNAME` already
+   contains `vitotaxi.cierp.uk`. *Pages on a private repository needs a paid plan; otherwise make it public.*
+2. **Cloudflare DNS (cierp.uk):** add `CNAME vitotaxi → ccg-cyber.github.io`, DNS only.
+3. Once GitHub has issued the certificate, tick **Enforce HTTPS**.
+4. **Google Search Console:** add the site and submit `https://vitotaxi.cierp.uk/sitemap.xml`.
+   On the Google Business Profile, set the website to `https://vitotaxi.cierp.uk/`.
+   That link is what ties the site to the 4.9★ listing in local search.
 
-1. **GitHub → Settings → Pages:** deploy from a branch, choose the branch holding these files
-   and `/ (root)`. The `CNAME` file already says `vitotaxi.cierp.uk`.
-   *GitHub Pages on a private repository needs a paid plan. On the free plan, make the repository public.*
-2. **Cloudflare DNS for cierp.uk:** add `CNAME vitotaxi → ccg-cyber.github.io` (DNS only, grey cloud).
-3. Wait for GitHub to issue the certificate, then tick **Enforce HTTPS**.
-4. **Google Search Console:** add `https://vitotaxi.cierp.uk/` and submit `sitemap.xml`.
-   In the Google Business Profile, set the website to this address. That link is what connects the
-   site to the 4.9★ listing in local search.
+## Licences of bundled code
+
+- GSAP, ScrollTrigger and SplitText: GreenSock standard no-charge licence.
+- Lenis: MIT.
+- Fonts (Instrument Serif, Manrope, IBM Plex Sans Arabic): SIL Open Font License.

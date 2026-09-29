@@ -1,111 +1,13 @@
 # -*- coding: utf-8 -*-
-"""Hand-drawn SVG artwork shared by every page: the van, the skyline, the monogram and the icons."""
+"""SVG shared by every page: the Vito Taxi winged-V mark, the star and the line icons."""
 
 
-def van(uid='v', moving=True):
-    """A black Mercedes-Benz Vito-style van in side profile, facing right. No badges, no plates."""
-    w = ' class="wheel"' if moving else ''
-    beam = '<path class="beam" d="M758 176 L990 140 L990 230 Z" fill="url(#%s-beam)"/>' % uid if moving else ''
-    return f'''<svg viewBox="0 0 1000 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Black Mercedes-Benz Vito van" style="overflow:visible">
-<defs>
- <linearGradient id="{uid}-body" x1="0" y1="0" x2="0" y2="1">
-  <stop offset="0" stop-color="#3A3E48"/><stop offset=".18" stop-color="#1B1E25"/><stop offset=".55" stop-color="#0D0F13"/><stop offset="1" stop-color="#050608"/>
- </linearGradient>
- <linearGradient id="{uid}-shine" x1="0" y1="0" x2="1" y2="0">
-  <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".45" stop-color="#F6DC9C" stop-opacity=".28"/><stop offset=".55" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
- </linearGradient>
- <linearGradient id="{uid}-glass" x1="0" y1="0" x2="1" y2="1">
-  <stop offset="0" stop-color="#2A3242"/><stop offset=".5" stop-color="#0B0E15"/><stop offset="1" stop-color="#1A2030"/>
- </linearGradient>
- <linearGradient id="{uid}-refl" x1="0" y1="0" x2="1" y2="0">
-  <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#E8D8B5" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
- </linearGradient>
- <radialGradient id="{uid}-rim" cx=".4" cy=".35" r=".7">
-  <stop offset="0" stop-color="#E9EBEF"/><stop offset=".55" stop-color="#8C919B"/><stop offset="1" stop-color="#3A3D44"/>
- </radialGradient>
- <radialGradient id="{uid}-head" cx=".5" cy=".5" r=".5">
-  <stop offset="0" stop-color="#FFFBEF"/><stop offset=".4" stop-color="#F6E7C2"/><stop offset="1" stop-color="#F6DC9C" stop-opacity="0"/>
- </radialGradient>
- <linearGradient id="{uid}-beam" x1="0" y1="0" x2="1" y2="0">
-  <stop offset="0" stop-color="#FFF3D6" stop-opacity=".55"/><stop offset="1" stop-color="#FFF3D6" stop-opacity="0"/>
- </linearGradient>
- <radialGradient id="{uid}-shadow" cx=".5" cy=".5" r=".5">
-  <stop offset="0" stop-color="#000" stop-opacity=".85"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
- </radialGradient>
-</defs>
-{beam}
-<ellipse cx="440" cy="300" rx="430" ry="22" fill="url(#{uid}-shadow)"/>
-<!-- body -->
-<path d="M58 262 L56 92 Q57 50 102 46 L610 40 Q648 39 668 60 L748 150 Q760 162 790 166 L862 176 Q900 182 906 212 L910 250 Q911 272 890 274 L812 276 A64 64 0 0 0 688 276 L292 276 A64 64 0 0 0 168 276 L78 276 Q58 276 58 262 Z" fill="url(#{uid}-body)"/>
-<path d="M60 96 Q62 56 104 52 L608 46 Q640 45 660 64 L700 108 L62 116 Z" fill="url(#{uid}-shine)" opacity=".9"/>
-<!-- roof taxi sign -->
-<rect x="360" y="26" width="112" height="18" rx="6" fill="#F6DC9C"/>
-<rect x="360" y="26" width="112" height="18" rx="6" fill="none" stroke="#AD8733" stroke-width="1.5"/>
-<text x="416" y="40" text-anchor="middle" font-family="Manrope,Arial,sans-serif" font-weight="800" font-size="13" letter-spacing="3" fill="#1A1408">TAXI</text>
-<rect x="340" y="42" width="152" height="5" rx="2" fill="#1B1E25"/>
-<!-- glasshouse -->
-<path d="M84 74 Q86 64 102 63 L602 58 Q628 58 642 74 L712 152 L84 156 Z" fill="url(#{uid}-glass)"/>
-<path d="M84 74 Q86 64 102 63 L602 58 Q628 58 642 74 L712 152 L84 156 Z" fill="url(#{uid}-refl)"/>
-<path d="M150 64 L110 156 L150 156 L190 63 Z M420 60 L380 156 L400 156 L440 60 Z" fill="#fff" opacity=".05"/>
-<!-- pillars -->
-<rect x="214" y="58" width="14" height="100" fill="#07080B"/>
-<rect x="456" y="56" width="14" height="102" fill="#07080B"/>
-<path d="M600 58 L616 58 L660 156 L644 156 Z" fill="#07080B"/>
-<!-- beltline chrome -->
-<path d="M70 160 L720 156" stroke="#C8CDD6" stroke-opacity=".55" stroke-width="2"/>
-<path d="M70 164 L724 160" stroke="#000" stroke-opacity=".5" stroke-width="1"/>
-<!-- door seams, sliding rail, handles -->
-<path d="M232 74 L232 272" stroke="#000" stroke-opacity=".7" stroke-width="2"/>
-<path d="M470 64 L470 272" stroke="#000" stroke-opacity=".7" stroke-width="2"/>
-<path d="M650 72 Q700 150 690 272" stroke="#000" stroke-opacity=".6" stroke-width="2" fill="none"/>
-<path d="M236 150 L466 148" stroke="#000" stroke-opacity=".45" stroke-width="3"/>
-<rect x="426" y="178" width="30" height="7" rx="3.5" fill="#9AA0AA" opacity=".7"/>
-<rect x="608" y="176" width="30" height="7" rx="3.5" fill="#9AA0AA" opacity=".7"/>
-<!-- side sculpt line -->
-<path d="M70 210 Q480 200 900 214" stroke="url(#{uid}-shine)" stroke-width="2" fill="none" opacity=".8"/>
-<path d="M70 236 L150 236 M310 236 L674 236 M830 236 L905 236" stroke="#000" stroke-opacity=".35" stroke-width="2"/>
-<!-- mirror -->
-<path d="M700 138 Q716 128 734 136 L736 156 Q716 160 704 156 Z" fill="#14171D" stroke="#2C3039"/>
-<!-- head & tail lights -->
-<path d="M846 180 Q890 184 900 200 L870 204 Q850 198 842 188 Z" fill="#EFE6D0"/>
-<ellipse cx="878" cy="194" rx="46" ry="26" fill="url(#{uid}-head)" opacity=".9"/>
-<path d="M58 104 L70 104 L70 172 L58 172 Z" fill="#B3261E"/>
-<path d="M58 104 L70 104 L70 172 L58 172 Z" fill="#FF5A46" opacity=".5"><animate attributeName="opacity" values=".35;.7;.35" dur="3s" repeatCount="indefinite"/></path>
-<!-- grille and bumper -->
-<path d="M900 212 L910 214 L910 246 L900 246 Z" fill="#0A0B0E"/>
-<path d="M896 218 L910 218 M896 226 L910 226 M896 234 L910 234" stroke="#8D929B" stroke-width="1.5" opacity=".6"/>
-<path d="M78 268 L168 268 M812 268 L890 268" stroke="#2A2D35" stroke-width="6" stroke-linecap="round"/>
-<!-- wheels -->
-<g transform="translate(230 276)"><circle r="58" fill="#050507"/><circle r="56" fill="#0E0F12" stroke="#1E2027" stroke-width="3"/>
- <g{w}><circle r="36" fill="url(#{uid}-rim)"/>
-  <g fill="#1A1C21">{''.join('<path d="M-5 -34 L5 -34 L3 -9 L-3 -9 Z" transform="rotate(%d)"/>' % a for a in range(0, 360, 36))}</g>
-  <circle r="10" fill="#2A2D34"/><circle r="4" fill="#C9CDD4"/></g></g>
-<g transform="translate(750 276)"><circle r="58" fill="#050507"/><circle r="56" fill="#0E0F12" stroke="#1E2027" stroke-width="3"/>
- <g{w}><circle r="36" fill="url(#{uid}-rim)"/>
-  <g fill="#1A1C21">{''.join('<path d="M-5 -34 L5 -34 L3 -9 L-3 -9 Z" transform="rotate(%d)"/>' % a for a in range(0, 360, 36))}</g>
-  <circle r="10" fill="#2A2D34"/><circle r="4" fill="#C9CDD4"/></g></g>
-</svg>'''
-
-
-def skyline():
-    """A Beirut-coast silhouette: towers, the hills behind, a few lit windows."""
-    import random
-    r = random.Random(7)
-    parts = ['<path d="M0 120 Q120 70 260 96 T520 84 T800 92 L800 200 L0 200 Z" fill="#131826"/>']
-    x = 0
-    while x < 800:
-        w = r.randint(26, 58); h = r.randint(40, 150)
-        parts.append('<rect x="%d" y="%d" width="%d" height="%d" fill="#0B0E16"/>' % (x, 200 - h, w, h))
-        for _ in range(r.randint(1, 5)):
-            wx = x + r.randint(4, max(5, w - 8)); wy = 200 - h + r.randint(8, max(9, h - 10))
-            parts.append('<rect x="%d" y="%d" width="3" height="4" fill="#F6DC9C" opacity="%.2f"/>' % (wx, wy, r.uniform(.35, .9)))
-        x += w + r.randint(2, 14)
-    return '<svg viewBox="0 0 800 200" preserveAspectRatio="none" aria-hidden="true">%s</svg>' % ''.join(parts)
-
-
-MONO = '''<svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6DC9C"/><stop offset=".6" stop-color="#E2B85C"/><stop offset="1" stop-color="#AD8733"/></linearGradient></defs>
-<circle cx="24" cy="24" r="22.5" fill="#0C0D11" stroke="url(#mg)" stroke-width="1.5"/><circle cx="24" cy="24" r="18.5" fill="none" stroke="url(#mg)" stroke-opacity=".35" stroke-width=".8"/>
-<path d="M14 15 L24 35 L34 15" fill="none" stroke="url(#mg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="12.5" r="1.6" fill="#F6DC9C"/></svg>'''
+MONO = '''<svg viewBox="0 0 64 64" aria-hidden="true" class="mark"><defs><linearGradient id="mg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE7A3"/><stop offset=".5" stop-color="#F5B82E"/><stop offset="1" stop-color="#B7811A"/></linearGradient></defs>
+<circle class="mk-ring" cx="32" cy="32" r="19" fill="none" stroke="url(#mg)" stroke-width="2"/>
+<g class="mk-wing" fill="url(#mg)"><path d="M13.2 24.2 L1 25.4 L13 27.4Z"/><path d="M13 29.4 L3.5 30.6 L13.2 32.4Z"/><path d="M13.6 34.4 L6.5 35.6 L14.2 37.2Z"/></g>
+<g class="mk-wing r" fill="url(#mg)"><path d="M50.8 24.2 L63 25.4 L51 27.4Z"/><path d="M51 29.4 L60.5 30.6 L50.8 32.4Z"/><path d="M50.4 34.4 L57.5 35.6 L49.8 37.2Z"/></g>
+<path class="mk-v" d="M21.5 21 H27.6 L32 35.2 L36.4 21 H42.5 L34.3 44.5 H29.7 Z" fill="url(#mg)"/>
+<path d="M29.4 21 L32 29.6 L34.6 21" fill="none" stroke="#0A0A0B" stroke-width="1.1" opacity=".55"/></svg>'''
 
 STAR = '<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.5 6 .7-4.4 4.1 1.2 6-5.4-3-5.4 3 1.2-6L1.4 7.7l6-.7z"/></svg>'
 
