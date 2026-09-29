@@ -68,7 +68,7 @@ export function Hero() {
             <label className={field}><i className="z-1 size-[15px] shrink-0 rounded-[4px] bg-gold" /><span className="sr-only">{t.f_to}</span>
               <input name="to" className={input} placeholder={x.q_to} /></label>
           </div>
-          <div className="mb-3.5 grid grid-cols-[minmax(0,1.2fr)_minmax(0,.8fr)] gap-2">
+          <div className="mb-3.5 grid grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-2">
             <label className={field}><Clock className="size-4 shrink-0 text-gold" /><span className="sr-only">{t.f_time}</span>
               <select name="when" className={input + ' select-native'}>{x.q_when.map(w => <option key={w}>{w}</option>)}</select></label>
             <label className={field}><Users className="size-4 shrink-0 text-gold" /><span className="sr-only">{t.f_pax}</span>
