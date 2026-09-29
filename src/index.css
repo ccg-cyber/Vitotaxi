@@ -1,0 +1,154 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+@custom-variant rtl (&:where([dir="rtl"], [dir="rtl"] *));
+
+/* ── Fonts (self-hosted) ── */
+@font-face{font-family:"Instrument Serif";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/instrument-serif.woff2) format("woff2")}
+@font-face{font-family:"Instrument Serif";font-style:italic;font-weight:400;font-display:swap;src:url(/fonts/instrument-serif-italic.woff2) format("woff2")}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:200 800;font-display:swap;src:url(/fonts/manrope.woff2) format("woff2")}
+@font-face{font-family:"Plex Arabic";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/plex-arabic-400.woff2) format("woff2")}
+@font-face{font-family:"Plex Arabic";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/plex-arabic-700.woff2) format("woff2")}
+
+/* ── shadcn tokens, mapped to the Vito Taxi brand: obsidian and gold ── */
+:root{
+  --radius:1.25rem;
+  --background:#060607; --foreground:#E9E3D7;
+  --card:#0E0E11; --card-foreground:#E9E3D7;
+  --popover:#111114; --popover-foreground:#E9E3D7;
+  --primary:#F5B82E; --primary-foreground:#1B1204;
+  --secondary:#15151A; --secondary-foreground:#F7F2E8;
+  --muted:#15151A; --muted-foreground:#A09A8E;
+  --accent:#1B1B21; --accent-foreground:#F7F2E8;
+  --destructive:#E5484D;
+  --border:rgba(255,236,196,.09); --input:rgba(255,236,196,.16); --ring:#F5B82E;
+  --goldgrad:linear-gradient(135deg,#FFE9A8 0%,#F5B82E 45%,#D9951B 75%,#B7811A 100%);
+  color-scheme:dark;
+}
+
+@theme inline {
+  --color-background:var(--background); --color-foreground:var(--foreground);
+  --color-card:var(--card); --color-card-foreground:var(--card-foreground);
+  --color-popover:var(--popover); --color-popover-foreground:var(--popover-foreground);
+  --color-primary:var(--primary); --color-primary-foreground:var(--primary-foreground);
+  --color-secondary:var(--secondary); --color-secondary-foreground:var(--secondary-foreground);
+  --color-muted:var(--muted); --color-muted-foreground:var(--muted-foreground);
+  --color-accent:var(--accent); --color-accent-foreground:var(--accent-foreground);
+  --color-destructive:var(--destructive);
+  --color-border:var(--border); --color-input:var(--input); --color-ring:var(--ring);
+  --radius-sm:calc(var(--radius) - 8px); --radius-md:calc(var(--radius) - 4px); --radius-lg:var(--radius); --radius-xl:calc(var(--radius) + 8px); --radius-2xl:calc(var(--radius) + 20px);
+}
+
+@theme {
+  --color-ink:#060607; --color-ink-2:#0B0B0D; --color-tile:#0E0E11; --color-tile-2:#15151A;
+  --color-ivory:#F7F2E8; --color-muted-2:#6E6A62; --color-sand:#CFC8BA;
+  --color-gold:#F5B82E; --color-gold-2:#FFE08A; --color-gold-3:#B7811A; --color-gold-ink:#1B1204;
+  --color-line:rgba(255,236,196,.09); --color-line-2:rgba(255,236,196,.16); --color-line-3:rgba(255,236,196,.26);
+  --color-wa:#25D366;
+  --font-sans:"Manrope",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --font-serif:"Instrument Serif","Times New Roman",Georgia,serif;
+  --font-mono:ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --ease-lux:cubic-bezier(.19,1,.22,1);
+  --breakpoint-lg:66.25rem;
+  --animate-marquee:marquee 55s linear infinite;
+  --animate-marquee-rtl:marquee-rtl 55s linear infinite;
+  --animate-kenburns:kenburns 16s ease-out forwards;
+  --animate-live:live 2s infinite;
+  --animate-spin-slow:spin 24s linear infinite;
+  --animate-ring:ring 2.6s cubic-bezier(.19,1,.22,1) infinite;
+  @keyframes marquee{to{transform:translateX(-50%)}}
+  @keyframes marquee-rtl{to{transform:translateX(50%)}}
+  @keyframes kenburns{from{transform:scale(1.08)}to{transform:scale(1)}}
+  @keyframes live{70%{box-shadow:0 0 0 9px rgba(59,227,127,0)}100%{box-shadow:0 0 0 0 rgba(59,227,127,0)}}
+  @keyframes ring{0%{transform:scale(.85);opacity:1}100%{transform:scale(1.45);opacity:0}}
+}
+
+@layer base{
+  *{@apply border-border}
+  html{-webkit-text-size-adjust:100%}
+  html.lenis,html.lenis body{height:auto}
+  .lenis.lenis-smooth{scroll-behavior:auto!important}
+  body{@apply bg-background text-foreground font-sans antialiased;font-size:16.5px;line-height:1.6;letter-spacing:-.006em;overflow-x:hidden}
+  [dir="rtl"]{--font-sans:"Plex Arabic","Manrope",system-ui,Tahoma,Arial,sans-serif;--font-serif:"Plex Arabic","Instrument Serif",serif}
+  [dir="rtl"] body{letter-spacing:0;line-height:1.8}
+  h1,h2,h3,h4{@apply text-ivory font-normal}
+  ::selection{background:var(--color-gold);color:var(--color-gold-ink)}
+  :focus-visible{outline:2px solid var(--color-gold);outline-offset:3px}
+  [id]{scroll-margin-top:100px}
+  img{max-width:100%}
+  body::after{content:"";position:fixed;inset:0;z-index:250;pointer-events:none;opacity:.045;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+}
+
+/* ── Brand utilities ── */
+@utility wrap{max-width:1280px;margin-inline:auto;padding-inline:clamp(16px,4.5vw,64px)}
+@utility display{font-family:var(--font-serif);letter-spacing:-.025em;line-height:.95;
+  &:where([dir="rtl"] *){font-weight:700;letter-spacing:0;line-height:1.2}}
+@utility text-h1{font-size:clamp(3.3rem,9.6vw,8.6rem);&:where([dir="rtl"] *){font-size:clamp(2.6rem,7.6vw,6.4rem)}}
+@utility text-h2{font-size:clamp(2.5rem,6vw,5rem);&:where([dir="rtl"] *){font-size:clamp(2rem,4.8vw,3.8rem)}}
+@utility gold-text{background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent}
+@utility btn-gold{background:var(--goldgrad);position:relative;overflow:hidden;isolation:isolate;
+  &::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.6) 50%,transparent 65%);transform:translateX(-120%);transition:transform 1s var(--ease-lux)}
+  &:hover::after{transform:translateX(120%)}}
+@utility bg-goldgrad{background:var(--goldgrad)}
+@utility glass{background:rgba(14,14,17,.6);backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%)}
+@utility gold-edge{position:relative;
+  &::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;pointer-events:none;
+    background:linear-gradient(150deg,rgba(255,224,138,.7),transparent 35%,transparent 70%,rgba(245,184,46,.45));
+    -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}}
+@utility eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--color-gold);
+  &::before{content:"";width:22px;height:1px;background:currentColor;opacity:.7}
+  &:where([dir="rtl"] *){letter-spacing:0;font-size:.92rem}}
+@utility tk{font-family:var(--font-mono);font-size:.78rem;color:var(--color-gold);&:where([dir="rtl"] *){font-family:var(--font-sans);font-size:.9rem}}
+@utility outline-text{color:transparent;-webkit-text-stroke:1px rgba(247,242,232,.32)}
+
+/* Gold words inside headings: works through split-word animation too. */
+em.g{font-style:italic;padding-inline-end:.06em}
+em.g,em.g .w{background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent}
+[dir="rtl"] em.g{font-style:normal}
+
+/* ── Preloader: CSS only, so it can never trap a visitor. ── */
+.loader{position:fixed;inset:0;z-index:400;display:grid;place-items:center;background:var(--color-ink);
+  animation:loader-out 1.1s var(--ease-lux) 2s forwards}
+.no-loader .loader{display:none}
+.loader .mk-ring{stroke-dasharray:120;stroke-dashoffset:120;animation:draw 1.2s var(--ease-lux) .1s forwards}
+.loader .mk-v{opacity:0;animation:rise .8s var(--ease-lux) .45s forwards}
+.loader .mk-wing{opacity:0;transform:translateX(10px);animation:rise .9s var(--ease-lux) .7s forwards}
+.loader .mk-wing.r{transform:translateX(-10px)}
+.loader-word{opacity:0;animation:rise .8s var(--ease-lux) .9s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes rise{to{opacity:1;transform:none}}
+@keyframes loader-out{to{clip-path:inset(0 0 100% 0);visibility:hidden}}
+
+/* ── Premium WhatsApp button ── */
+@property --a{syntax:"<angle>";inherits:false;initial-value:0deg}
+.wa-ring::before{content:"";position:absolute;inset:-1.5px;border-radius:inherit;padding:1.5px;pointer-events:none;
+  background:conic-gradient(from var(--a),transparent 0 55%,#FFE08A 70%,#F5B82E 80%,transparent 95%);
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:spin-a 4s linear infinite}
+@keyframes spin-a{to{--a:360deg}}
+
+/* Clock hands in the 24/7 tile. */
+.clock::before,.clock::after{content:"";position:absolute;left:50%;bottom:50%;width:2px;margin-left:-1px;border-radius:2px;transform-origin:bottom center}
+.clock::before{height:24px;background:var(--color-gold);animation:spin 12s linear infinite}
+.clock::after{height:34px;background:var(--color-ivory);opacity:.7;animation:spin 3s linear infinite}
+.flight-dash{stroke-dasharray:3 7;animation:dash 16s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-400}}
+
+/* Native selects styled like shadcn inputs. */
+.select-native{appearance:none;-webkit-appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,var(--color-gold) 50%),linear-gradient(135deg,var(--color-gold) 50%,transparent 50%);
+  background-position:calc(100% - 22px) 50%,calc(100% - 16px) 50%;background-size:6px 6px;background-repeat:no-repeat;padding-inline-end:40px}
+[dir="rtl"] .select-native{background-position:16px 50%,22px 50%}
+.select-native option{background:#111;color:#fff}
+input[type=date],input[type=time]{color-scheme:dark}
+
+/* FAQ answers stay in the HTML for search engines but only show when opened. */
+[data-slot=accordion-content][data-state=closed]{display:none}
+
+.no-scrollbar{scrollbar-width:none}.no-scrollbar::-webkit-scrollbar{display:none}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .loader{display:none}
+}
