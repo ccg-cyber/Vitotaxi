@@ -51,7 +51,7 @@ export function Bento() {
             <div><div className={big} dir="ltr">{x.open247}</div><p className="mt-3 text-muted-foreground">{x.t_247_p}</p></div>
           </StaggerItem>
           <StaggerItem className={cn(tile, 'group min-h-[340px] justify-end p-0 md:col-span-2 lg:row-span-2')}>
-            <Img name="vito-cockpit" alt={x.t_car_h} className="absolute inset-0 -z-20 transition-transform duration-[1.4s] ease-lux group-hover:scale-[1.06]" />
+            <Img name="vito-charbel" alt={x.t_car_h} className="absolute inset-0 -z-20 transition-transform duration-[1.4s] ease-lux group-hover:scale-[1.06]" />
             <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(6,6,7,.1)_20%,rgba(6,6,7,.92))]" />
             <div className="p-7"><span className="tk">{x.t_car}</span><h3 className={cn(h3, 'mt-2.5 mb-2')}>{x.t_car_h}</h3><p className="text-sand">{x.t_car_p}</p></div>
           </StaggerItem>

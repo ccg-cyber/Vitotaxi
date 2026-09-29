@@ -1404,7 +1404,7 @@ export type Area = (typeof AREAS)[number]
 
 /* Which photo (public/img/<name>.webp) illustrates each area. */
 export const AREA_IMG: Record<string, string> = {
-  "taxi-antelias": "marina",
+  "taxi-antelias": "vito-charbel",
   "beirut-airport-taxi": "vito-sunset",
   "taxi-beirut": "raouche",
   "taxi-jounieh": "jounieh",

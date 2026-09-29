@@ -10,7 +10,7 @@ export function Parallax({ children, className, amount = 12 }: { children: React
   const y = useTransform(scrollYProgress, [0, 1], [`-${amount / 2}%`, `${amount / 2}%`])
   return (
     <div ref={ref} className={cn('overflow-hidden', className)}>
-      <motion.div style={reduce ? undefined : { y }} className="h-[118%] w-full -translate-y-[8%]">{children}</motion.div>
+      <motion.div style={reduce ? undefined : { y }} className="h-[118%] w-full -translate-y-[4%]">{children}</motion.div>
     </div>
   )
 }
