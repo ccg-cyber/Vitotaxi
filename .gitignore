@@ -1,4 +1,5 @@
 node_modules/
-dist/
-dist-ssr/
+web/dist/
+web/dist-ssr/
+*.tsbuildinfo
 __pycache__/

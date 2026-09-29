@@ -13,13 +13,13 @@ The site is built with the same toolchain Atoms (mgx.dev) uses to generate websi
 |---|---|
 | **React 19 + TypeScript** | components and pages |
 | **Vite** | dev server and build |
-| **Tailwind CSS v4** | styling, with the brand theme in `src/index.css` |
-| **shadcn/ui** (Radix) | Button, Input, Textarea, Accordion, Sheet, ToggleGroup, Label… in `src/components/ui` |
+| **Tailwind CSS v4** | styling, with the brand theme in `web/src/index.css` |
+| **shadcn/ui** (Radix) | Button, Input, Textarea, Accordion, Sheet, ToggleGroup, Label… in `web/src/components/ui` |
 | **Framer Motion** | reveals, split-word headlines, parallax, the pinned horizontal gallery, the WhatsApp bubble |
 | **Lenis** | smooth scrolling on desktop |
 | **lucide-react** | icons |
 
-Every page is **pre-rendered to static HTML at build time** (`scripts/prerender.mjs`). Google gets complete
+Every page is **pre-rendered to static HTML at build time** (`web/scripts/prerender.mjs`). Google gets complete
 pages with titles, structured data and every word of the FAQ. Visitors get an instant first paint, and
 React then takes over in the browser.
 
@@ -37,20 +37,29 @@ React then takes over in the browser.
 
 Every booking form writes a WhatsApp message to **+961 70 609 211**. Nothing is stored.
 
+## Repository layout
+
+- **`web/`**: the React project (source, public assets, build scripts).
+- **Repository root**: the **built site** that GitHub Pages serves. It is generated, so don't edit it by hand;
+  `.published.json` lists every entry the build owns.
+
 ## Working on it
 
+    cd web
     npm install
     npm run dev        # http://localhost:5173
-    npm run build      # type-check, build, pre-render → dist/
-    npm run preview    # serve dist/
+    npm run build      # type-check, build, pre-render, then publish to the repo root
+    npm run preview    # serve web/dist/
+
+Then commit both `web/` and the rebuilt root.
 
 | What | Where |
 |---|---|
-| Phone, links, rating, all English and Arabic copy, areas, FAQs | `src/content/data.ts` |
-| Page layout and sections | `src/pages/*`, `src/components/sections/*` |
-| Nav, footer, WhatsApp button, cursor, loader | `src/components/layout/*` |
-| Titles, descriptions, canonical/hreflang, structured data | `src/lib/seo.ts` |
-| Colours, fonts, brand utilities | `src/index.css` |
+| Phone, links, rating, all English and Arabic copy, areas, FAQs | `web/src/content/data.ts` |
+| Page layout and sections | `web/src/pages/*`, `web/src/components/sections/*` |
+| Nav, footer, WhatsApp button, cursor, loader | `web/src/components/layout/*` |
+| Titles, descriptions, canonical/hreflang, structured data | `web/src/lib/seo.ts` |
+| Colours, fonts, brand utilities | `web/src/index.css` |
 
 In the copy, text between `*asterisks*` in a heading is rendered in gold italic.
 
@@ -67,14 +76,13 @@ In the copy, text between `*asterisks*` in a heading is rendered in gold italic.
 
 ## Deploying on vitotaxi.cierp.uk
 
-`.github/workflows/deploy.yml` builds the site on every push to `main` or to this working branch, and
-publishes the finished `dist/` to the **`gh-pages`** branch.
+GitHub Pages serves this branch's root, which holds the built site, so no special Pages setting is needed.
+When anything under `web/` changes on GitHub, `.github/workflows/deploy.yml` rebuilds the site and commits the fresh
+build to the root.
 
-1. **GitHub → Settings → Pages → Deploy from a branch → `gh-pages` / (root).**
-   The `gh-pages` branch appears after the workflow's first run.
+1. **GitHub → Settings → Pages:** deploy from a branch, choose this branch (or `main` after merging), `/ (root)`.
    *Pages on a private repository needs a paid plan; otherwise make it public.*
-2. **Cloudflare DNS (cierp.uk):** add `CNAME vitotaxi → ccg-cyber.github.io`, DNS only.
-   `public/CNAME` already contains the domain and is copied into every build.
+2. **Cloudflare DNS (cierp.uk):** add `CNAME vitotaxi → ccg-cyber.github.io`, DNS only. `CNAME` is already in place.
 3. Tick **Enforce HTTPS** once the certificate is issued. Then submit
    `https://vitotaxi.cierp.uk/sitemap.xml` in Google Search Console, and set the site as the website on the
    Google Business Profile.
@@ -83,10 +91,10 @@ publishes the finished `dist/` to the **`gh-pages`** branch.
 
 - **Car photography:** Unsplash (Unsplash License). The photos show the car model, not Vito Taxi's own vehicle.
 - **Lebanon photography:** Wikimedia Commons (Creative Commons), credited on `/credits/` as the licences require.
-- **Charbel's own photos:** drop them into `public/photos/` as `vito-1.jpg`, `vito-2.jpg` or `vito-3.jpg` and a gallery appears
+- **Charbel's own photos:** drop them into `web/public/photos/` as `vito-1.jpg`, `vito-2.jpg` or `vito-3.jpg` and a gallery appears
   automatically under "The Vito".
 - **Link preview and icons:** to regenerate `og.jpg` and the app icons after changing the logo or hero photo, run
-  `NODE_PATH=$(npm root -g) npm run images` (needs Playwright).
+  `cd web && NODE_PATH=$(npm root -g) npm run images` (needs Playwright).
 
 ## Licences of bundled code and fonts
 

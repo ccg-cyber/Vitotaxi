@@ -3,10 +3,10 @@
   "private": true,
   "version": "2.0.0",
   "type": "module",
-  "description": "Vito Taxi by Charbel — premium 24/7 Mercedes Vito taxi in Antelias, Lebanon.",
+  "description": "Vito Taxi by Charbel \u2014 premium 24/7 Mercedes Vito taxi in Antelias, Lebanon.",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs",
+    "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr && node scripts/prerender.mjs && node scripts/publish.mjs",
     "preview": "vite preview",
     "typecheck": "tsc -b",
     "images": "node scripts/render-images.cjs"
