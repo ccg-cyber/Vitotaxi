@@ -67,14 +67,15 @@ In the copy, text between `*asterisks*` in a heading is rendered in gold italic.
 
 ## Deploying on vitotaxi.cierp.uk
 
-`.github/workflows/deploy.yml` builds the site and publishes `dist/` to GitHub Pages on every push to `main`.
+`.github/workflows/deploy.yml` builds the site on every push to `main` or to this working branch, and
+publishes the finished `dist/` to the **`gh-pages`** branch.
 
-1. **GitHub → Settings → Pages → Source: GitHub Actions.**
+1. **GitHub → Settings → Pages → Deploy from a branch → `gh-pages` / (root).**
+   The `gh-pages` branch appears after the workflow's first run.
    *Pages on a private repository needs a paid plan; otherwise make it public.*
-2. Merge this branch into `main`, or run the workflow by hand from the Actions tab.
-3. **Cloudflare DNS (cierp.uk):** add `CNAME vitotaxi → ccg-cyber.github.io`, DNS only.
-   `public/CNAME` already contains the domain.
-4. Tick **Enforce HTTPS** once the certificate is issued. Then submit
+2. **Cloudflare DNS (cierp.uk):** add `CNAME vitotaxi → ccg-cyber.github.io`, DNS only.
+   `public/CNAME` already contains the domain and is copied into every build.
+3. Tick **Enforce HTTPS** once the certificate is issued. Then submit
    `https://vitotaxi.cierp.uk/sitemap.xml` in Google Search Console, and set the site as the website on the
    Google Business Profile.
 
