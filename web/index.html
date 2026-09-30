@@ -13,6 +13,9 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/icon-180.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <script>/* Day or night before anything paints: a choice made this visit wins, otherwise the visitor's clock decides (6:00–18:00 is day). */
+(function(){var t=null;try{t=sessionStorage.getItem('vt-theme')}catch(e){}if(t!=='day'&&t!=='night'){var h=new Date().getHours();t=h>=6&&h<18?'day':'night'}
+document.documentElement.setAttribute('data-theme',t);var m=document.querySelector('meta[name=theme-color]');if(m)m.content=t==='day'?'#F7F3EA':'#060607'})();</script>
     <script>try{if(sessionStorage.getItem('vt-seen')==='1')document.documentElement.classList.add('no-loader');sessionStorage.setItem('vt-seen','1')}catch(e){}</script>
     <noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
     <!--app-head-->

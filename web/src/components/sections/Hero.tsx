@@ -33,7 +33,7 @@ export function Hero() {
   const input = 'h-[50px] min-w-0 flex-1 border-0 bg-transparent text-[.97rem] text-ivory outline-none placeholder:text-muted-2'
 
   return (
-    <section ref={ref} aria-labelledby="h1" className="relative isolate flex min-h-svh items-end overflow-hidden pt-32 pb-[clamp(40px,7vh,80px)]">
+    <section ref={ref} aria-labelledby="h1" className="on-dark relative isolate flex min-h-svh items-end overflow-hidden pt-32 pb-[clamp(40px,7vh,80px)]">
       <motion.div style={reduce ? undefined : { y, opacity: fade }} className="absolute inset-0 -z-20 overflow-hidden">
         <picture>
           <source media="(max-width: 700px)" srcSet="/img/vito-night-m.webp" />

@@ -18,7 +18,7 @@ export function Services() {
             const Icon = ICONS[ic] ?? Map
             return (
               <StaggerItem key={h}>
-                <article className="group relative isolate flex min-h-[480px] flex-col justify-end overflow-hidden rounded-[28px] border border-line">
+                <article className="on-dark group relative isolate flex min-h-[480px] flex-col justify-end overflow-hidden rounded-[28px] border border-line">
                   <Img name={PHOTOS[i]} alt={h} className="absolute inset-0 -z-20 scale-[1.02] transition-transform duration-[1.6s] ease-lux group-hover:scale-110" />
                   <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(6,6,7,.2)_0%,rgba(6,6,7,.25)_35%,rgba(6,6,7,.96)_100%)]" />
                   <span className="absolute start-5.5 top-5.5 rounded-full border border-line-2 bg-black/40 px-2.5 py-1.5 font-mono text-[.78rem] text-gold-2 backdrop-blur-sm">0{i + 1}</span>

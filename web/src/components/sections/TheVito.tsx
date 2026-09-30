@@ -39,7 +39,7 @@ export function TheVito() {
         <Reveal className="relative mx-auto aspect-[1/1.08] w-full max-w-[620px]">
           <figure className="absolute inset-[0_24%_16%_0] m-0 overflow-hidden rounded-[28px] border border-line-2 shadow-[0_40px_80px_-40px_#000] rtl:inset-[0_0_16%_24%]"><Parallax amount={14} className="size-full"><Img name="vito-charbel-p" alt="The Vito Taxi Mercedes-Benz Vito with its TAXI roof sign" className="object-[50%_0%]" /></Parallax></figure>
           <figure className="absolute inset-[40%_0_0_48%] m-0 overflow-hidden rounded-[28px] border border-line-2 shadow-[0_40px_80px_-40px_#000] rtl:inset-[40%_48%_0_0]"><Parallax amount={14} className="size-full"><Img name="beirut-night" alt="Night rides along the Beirut coast" /></Parallax></figure>
-          <div aria-hidden="true" className="absolute end-[6%] top-[6%] z-2 grid size-32 place-items-center rounded-full border border-gold/40 bg-[rgba(12,12,14,.72)] backdrop-blur-md">
+          <div aria-hidden="true" className="on-dark absolute end-[6%] top-[6%] z-2 grid size-32 place-items-center rounded-full border border-gold/40 bg-[rgba(12,12,14,.72)] backdrop-blur-md">
             <svg viewBox="0 0 128 128" className="absolute inset-0 size-full animate-spin-slow"><defs><path id="bc" d="M64 64 m-50 0 a50 50 0 1 1 100 0 a50 50 0 1 1 -100 0" /></defs>
               <text style={{ font: '800 8.4px/1 Manrope,sans-serif', letterSpacing: '.3em' }} fill="#FFE08A"><textPath href="#bc">VITO TAXI · SEDANS · VANS · FIRST CLASS · VITO TAXI · SEDANS · VANS · </textPath></text></svg>
             <b className="font-serif text-[2.3rem] font-normal text-ivory" dir="ltr">V</b>

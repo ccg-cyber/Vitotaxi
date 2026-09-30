@@ -14,7 +14,7 @@ import { useLang } from '@/lib/i18n'
 import { waLink } from '@/lib/seo'
 import { cn } from '@/lib/utils'
 
-const field = 'h-[54px] rounded-[14px] border-line-2 bg-black/40 px-4 text-base text-ivory placeholder:text-muted-2 focus-visible:border-gold focus-visible:ring-gold/15 md:text-base'
+const field = 'h-[54px] rounded-[14px] border-line-2 bg-[var(--field)] px-4 text-base text-ivory placeholder:text-muted-2 focus-visible:border-gold focus-visible:ring-gold/15 md:text-base'
 const label = 'text-[.72rem] font-bold tracking-[.14em] text-muted-foreground uppercase rtl:text-[.88rem] rtl:tracking-normal'
 
 export function Booking() {
@@ -50,7 +50,7 @@ export function Booking() {
     <section id="book" aria-labelledby="book-h" className="relative isolate overflow-hidden py-[clamp(90px,12vw,160px)]">
       <div aria-hidden="true" className="absolute inset-0 -z-10">
         <Img name="qadisha" className="opacity-30 saturate-[.85]" />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,var(--color-ink)_0%,rgba(6,6,7,.72)_25%,rgba(6,6,7,.72)_75%,var(--color-ink)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,var(--color-ink)_0%,color-mix(in_srgb,var(--color-ink)_78%,transparent)_25%,color-mix(in_srgb,var(--color-ink)_78%,transparent)_75%,var(--color-ink)_100%)]" />
       </div>
       <div className="wrap grid items-start gap-11 lg:grid-cols-[.85fr_1.15fr] lg:gap-18">
         <div className="grid gap-5.5 lg:sticky lg:top-30">
@@ -61,7 +61,7 @@ export function Booking() {
             {contacts.map(c => (
               <StaggerItem key={c.small}>
                 <a href={c.href} {...(c.ext ? { target: '_blank', rel: 'noopener' } : {})}
-                  className="flex items-center gap-3.5 rounded-[20px] border border-line-2 bg-[rgba(14,14,17,.65)] px-4.5 py-4 backdrop-blur-md transition-all duration-600 ease-lux hover:translate-x-1 hover:border-gold/50 rtl:hover:-translate-x-1">
+                  className="flex items-center gap-3.5 rounded-[20px] border border-line-2 bg-tile/80 px-4.5 py-4 backdrop-blur-md transition-all duration-600 ease-lux hover:translate-x-1 hover:border-gold/50 rtl:hover:-translate-x-1">
                   <span className={cn('grid size-11.5 shrink-0 place-items-center rounded-full', c.wa ? 'bg-gradient-to-br from-[#2BE070] to-[#12A150] text-white' : 'bg-goldgrad text-gold-ink')}>{c.icon}</span>
                   <span><small className="block text-[.8rem] text-muted-foreground">{c.small}</small><b className="text-[1.05rem] text-ivory" dir={c.ltr ? 'ltr' : undefined}>{c.big}</b></span>
                 </a>
@@ -72,14 +72,14 @@ export function Booking() {
 
         <Reveal>
           <form id="bookform" noValidate onSubmit={submit}
-            className="gold-edge rounded-[40px] border border-line-2 bg-[rgba(14,14,17,.8)] p-[clamp(22px,3.6vw,40px)] shadow-[0_50px_100px_-50px_#000] backdrop-blur-2xl">
+            className="gold-edge rounded-[40px] border border-line-2 bg-tile/90 p-[clamp(22px,3.6vw,40px)] shadow-[0_50px_100px_-50px_#000] backdrop-blur-2xl">
             <h3 className="display mb-1 text-[2.4rem] rtl:text-[1.7rem]">{t.form_h}</h3>
             <p className="mb-6 text-[.95rem] text-muted-foreground">{t.form_sub}</p>
             <div className="grid gap-3.5">
               <div className="grid gap-2">
                 <span className={label} id="trip-l">{t.trip_lbl}</span>
                 <ToggleGroup type="single" dir={ar ? 'rtl' : 'ltr'} value={trip} onValueChange={pick} aria-labelledby="trip-l"
-                  className="grid w-full grid-cols-2 gap-1 rounded-2xl border border-line-2 bg-black/40 p-1 sm:grid-cols-4">
+                  className="grid w-full grid-cols-2 gap-1 rounded-2xl border border-line-2 bg-[var(--field)] p-1 sm:grid-cols-4">
                   {t.trips.map(([k, v]) => (
                     <ToggleGroupItem key={k} value={k}
                       className="h-11 rounded-xl! text-[.86rem] font-bold text-muted-foreground hover:bg-transparent hover:text-ivory data-[state=on]:bg-goldgrad data-[state=on]:text-gold-ink data-[state=on]:shadow-[0_8px_20px_-8px_rgba(245,184,46,.7)]">{v}</ToggleGroupItem>

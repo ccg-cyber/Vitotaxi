@@ -12,7 +12,7 @@ const useIso = typeof window === 'undefined' ? useEffect : useLayoutEffect
 function Card({ a, n }: { a: Area; n: number }) {
   const { lang, to } = useLang()
   return (
-    <Link to={to(a.slug)} className="group relative isolate block aspect-[3/4] w-[min(78vw,360px)] shrink-0 snap-start overflow-hidden rounded-[28px] border border-line lg:w-[400px]">
+    <Link to={to(a.slug)} className="on-dark group relative isolate block aspect-[3/4] w-[min(78vw,360px)] shrink-0 snap-start overflow-hidden rounded-[28px] border border-line lg:w-[400px]">
       <Img name={AREA_IMG[a.slug]} alt={a[lang]} className="absolute inset-0 -z-20 transition-transform duration-[1.6s] ease-lux group-hover:scale-[1.08]" />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(6,6,7,0)_35%,rgba(6,6,7,.93))]" />
       <span className="absolute start-5 top-5 rounded-full border border-line-2 bg-black/35 px-2.5 py-1.5 font-mono text-[.76rem] text-ivory backdrop-blur-sm">{String(n).padStart(2, '0')}</span>

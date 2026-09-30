@@ -13,7 +13,7 @@ export function FinalCta() {
   return (
     <section aria-labelledby="final-h" className="pb-4">
       <div className="wrap">
-        <Reveal className="relative isolate grid min-h-[640px] place-items-center overflow-hidden rounded-[40px] border border-line-2 px-6 py-22 text-center">
+        <Reveal className="on-dark relative isolate grid min-h-[640px] place-items-center overflow-hidden rounded-[40px] border border-line-2 px-6 py-22 text-center">
           <div aria-hidden="true" className="absolute inset-0 -z-10">
             <Parallax amount={12} className="size-full"><Img name="vito-star" /></Parallax>
             <div className="absolute inset-0 bg-[radial-gradient(80%_80%_at_50%_50%,rgba(6,6,7,.5),rgba(6,6,7,.92))]" />

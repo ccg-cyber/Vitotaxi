@@ -12,7 +12,7 @@ export function Review() {
   return (
     <section aria-labelledby="rate-h" className="pb-[clamp(90px,12vw,160px)]">
       <div className="wrap">
-        <Reveal className="relative isolate grid items-center gap-9 overflow-hidden rounded-[40px] border border-gold/25 bg-[radial-gradient(70%_100%_at_0%_0%,rgba(255,224,138,.16),transparent_60%),linear-gradient(160deg,#17130B,#0B0A08)] p-[clamp(34px,6vw,72px)] lg:grid-cols-[auto_1fr] lg:gap-18">
+        <Reveal className="on-dark relative isolate grid items-center gap-9 overflow-hidden rounded-[40px] border border-gold/25 bg-[radial-gradient(70%_100%_at_0%_0%,rgba(255,224,138,.16),transparent_60%),linear-gradient(160deg,#17130B,#0B0A08)] p-[clamp(34px,6vw,72px)] lg:grid-cols-[auto_1fr] lg:gap-18">
           <div className="flex items-center gap-5.5">
             <span className="gold-text font-serif text-[clamp(7rem,15vw,12rem)] leading-[.8] rtl:font-sans rtl:font-bold">{r}</span>
             <div><Stars className="size-[22px]" /><small className="mt-2.5 block text-muted-foreground">{t.out_of}</small></div>

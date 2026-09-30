@@ -64,6 +64,37 @@
   @keyframes ring{0%{transform:scale(.85);opacity:1}100%{transform:scale(1.45);opacity:0}}
 }
 
+/* ── Day theme: chosen by the visitor's clock (6:00–18:00), or by the sun/moon switch. ──
+   Photo areas carry .on-dark and keep the night palette so white type stays readable over images. */
+:root{--field:rgba(0,0,0,.4);--stroke:rgba(247,242,232,.32)}
+:root[data-theme="day"]{
+  --background:#F7F3EA; --foreground:#2B261D;
+  --card:#FFFFFF; --card-foreground:#2B261D; --popover:#FFFFFF; --popover-foreground:#2B261D;
+  --primary:#C8900F; --secondary:#EFE9DC; --secondary-foreground:#17130C;
+  --muted:#EFE9DC; --muted-foreground:#6B6457; --accent:#EDE6D6; --accent-foreground:#17130C;
+  --border:rgba(60,45,15,.12); --input:rgba(60,45,15,.18); --ring:#C8900F;
+  --color-ink:#F7F3EA; --color-ink-2:#EFE9DC; --color-tile:#FFFFFF; --color-tile-2:#FFFCF5;
+  --color-ivory:#17130C; --color-sand:#4A4439; --color-muted-2:#8F887A;
+  --color-gold:#B98208; --color-gold-2:#9A6A05; --color-gold-3:#8A5E06;
+  --color-line:rgba(60,45,15,.10); --color-line-2:rgba(60,45,15,.16); --color-line-3:rgba(60,45,15,.26);
+  --field:#FBF8F1; --stroke:rgba(40,30,10,.28);
+  color-scheme:light;
+}
+.on-dark,:root[data-theme="day"] .on-dark{
+  --background:#060607; --foreground:#E9E3D7; --muted-foreground:#A09A8E; --border:rgba(255,236,196,.09); --input:rgba(255,236,196,.16);
+  --color-ink:#060607; --color-ink-2:#0B0B0D; --color-tile:#0E0E11; --color-tile-2:#15151A;
+  --color-ivory:#F7F2E8; --color-sand:#CFC8BA; --color-muted-2:#6E6A62;
+  --color-gold:#F5B82E; --color-gold-2:#FFE08A; --color-gold-3:#B7811A;
+  --color-line:rgba(255,236,196,.09); --color-line-2:rgba(255,236,196,.16); --color-line-3:rgba(255,236,196,.26);
+  --field:rgba(0,0,0,.35); --stroke:rgba(247,242,232,.32);
+  color-scheme:dark; color:var(--foreground);
+}
+:root[data-theme="day"] body::after{opacity:.03}
+:root[data-theme="day"] .nav-pill{background:rgba(12,12,14,.9)}
+:root[data-theme="day"]{--goldtext:linear-gradient(135deg,#D69A14 0%,#B98208 45%,#9A6A05 100%)}
+:root[data-theme="day"] .on-dark{--goldtext:var(--goldgrad)}
+html{transition:background-color .6s}
+
 @layer base{
   *{@apply border-border}
   html{-webkit-text-size-adjust:100%}
@@ -87,7 +118,7 @@
   &:where([dir="rtl"] *){font-weight:700;letter-spacing:0;line-height:1.2}}
 @utility text-h1{font-size:clamp(3.3rem,9.6vw,8.6rem);&:where([dir="rtl"] *){font-size:clamp(2.6rem,7.6vw,6.4rem)}}
 @utility text-h2{font-size:clamp(2.5rem,6vw,5rem);&:where([dir="rtl"] *){font-size:clamp(2rem,4.8vw,3.8rem)}}
-@utility gold-text{background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent}
+@utility gold-text{background:var(--goldtext,var(--goldgrad));-webkit-background-clip:text;background-clip:text;color:transparent}
 @utility btn-gold{background:var(--goldgrad);position:relative;overflow:hidden;isolation:isolate;
   &::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.6) 50%,transparent 65%);transform:translateX(-120%);transition:transform 1s var(--ease-lux)}
   &:hover::after{transform:translateX(120%)}}
@@ -101,11 +132,11 @@
   &::before{content:"";width:22px;height:1px;background:currentColor;opacity:.7}
   &:where([dir="rtl"] *){letter-spacing:0;font-size:.92rem}}
 @utility tk{font-family:var(--font-mono);font-size:.78rem;color:var(--color-gold);&:where([dir="rtl"] *){font-family:var(--font-sans);font-size:.9rem}}
-@utility outline-text{color:transparent;-webkit-text-stroke:1px rgba(247,242,232,.32)}
+@utility outline-text{color:transparent;-webkit-text-stroke:1px var(--stroke)}
 
 /* Gold words inside headings: works through split-word animation too. */
 em.g{font-style:italic;padding-inline-end:.06em}
-em.g,em.g .w{background:var(--goldgrad);-webkit-background-clip:text;background-clip:text;color:transparent}
+em.g,em.g .w{background:var(--goldtext,var(--goldgrad));-webkit-background-clip:text;background-clip:text;color:transparent}
 [dir="rtl"] em.g{font-style:normal}
 
 /* ── Preloader: CSS only, so it can never trap a visitor. ── */

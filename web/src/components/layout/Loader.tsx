@@ -5,7 +5,7 @@ import { useLang } from '@/lib/i18n'
 export function Loader() {
   const { x } = useLang()
   return (
-    <div className="loader" aria-hidden="true">
+    <div className="loader on-dark" aria-hidden="true">
       <div className="text-center">
         <Mark className="mx-auto size-28" />
         <div className="loader-word mt-5 ps-[.5em] text-[.8rem] font-extrabold tracking-[.5em] text-ivory">

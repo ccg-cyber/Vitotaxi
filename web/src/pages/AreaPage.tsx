@@ -17,7 +17,7 @@ export default function AreaPage({ area: a }: { area: Area }) {
   const wa = waLink((ar ? 'مرحبا شربل، بدي مشوار — %s.' : 'Hello Charbel, I need a ride — %s.').replace('%s', name))
   return (
     <>
-      <section className="relative isolate flex min-h-[88svh] items-end overflow-hidden pt-36 pb-18">
+      <section className="on-dark relative isolate flex min-h-[88svh] items-end overflow-hidden pt-36 pb-18">
         <div className="absolute inset-0 -z-20">
           <Img name={AREA_IMG[a.slug]} alt={name} priority className="animate-kenburns" />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,6,7,.6)_0%,rgba(6,6,7,.2)_35%,rgba(6,6,7,.96)_100%)]" />
