@@ -97,7 +97,7 @@ export const T = {
       [
         "plane",
         "Airport transfers",
-        "To and from Beirut–Rafic Hariri International. Share your flight and the pickup is planned around it — early departures and late landings included."
+        "To and from Beirut–Rafic Hariri International. Share your flight and the pickup is planned around it — early departures and late landings included. Flight delayed? We wait at no extra charge."
       ],
       [
         "city",
@@ -107,7 +107,7 @@ export const T = {
       [
         "map",
         "Across Lebanon",
-        "A private driver for the day — Byblos, Batroun, Harissa, Jeita, the Cedars, Baalbek or the south. You choose the stops, we keep the time."
+        "A private driver for the day — Byblos, Batroun, Harissa, Jeita, the Cedars, Baalbek or the south. You choose the stops, we keep the time — with a full-day rate agreed upfront."
       ],
       [
         "glass",
@@ -273,6 +273,22 @@ export const T = {
         "Yes. From Antelias we drive across Lebanon — Jounieh, Byblos, Batroun, Faraya, the Cedars, Baalbek, the south — as a single ride or a private driver for the day."
       ],
       [
+        "What if my flight is delayed?",
+        "Send us your flight number when you book. If the flight is late, your driver waits and adjusts the pickup at no extra charge."
+      ],
+      [
+        "Do you have child or baby seats?",
+        "Yes. Mention it when you book on WhatsApp and the seat is fitted before pickup."
+      ],
+      [
+        "Can I hire a driver for the whole day?",
+        "Yes. For tourism, weddings or business, we offer a full-day rate across Lebanon, agreed before the day starts."
+      ],
+      [
+        "How do I pay?",
+        "In cash, in US dollars or Lebanese lira at the day's rate. The fare is agreed on WhatsApp before you ride."
+      ],
+      [
         "Can I book in advance?",
         "Yes, and it is the best way for early flights, weddings and day trips. Send the date and time and we confirm the booking."
       ],
@@ -366,7 +382,7 @@ export const T = {
       [
         "plane",
         "توصيل المطار",
-        "من وإلى مطار رفيق الحريري الدولي. ابعتلنا رقم الرحلة ومنرتّب الوقت على أساسها — حتى الطيارات الباكرة والوصول المتأخر."
+        "من وإلى مطار رفيق الحريري الدولي. ابعتلنا رقم الرحلة ومنرتّب الوقت على أساسها — حتى الطيارات الباكرة والوصول المتأخر. تأخرت الطيارة؟ منستنّاك بلا أي كلفة إضافية."
       ],
       [
         "city",
@@ -376,7 +392,7 @@ export const T = {
       [
         "map",
         "بكل لبنان",
-        "سائق خاص لنهار كامل — جبيل، البترون، حريصا، جعيتا، الأرز، بعلبك أو الجنوب. إنت بتختار الوقفات ونحنا منضبط الوقت."
+        "سائق خاص لنهار كامل — جبيل، البترون، حريصا، جعيتا، الأرز، بعلبك أو الجنوب. إنت بتختار الوقفات ونحنا منضبط الوقت — وسعر النهار الكامل متفق عليه سلفاً."
       ],
       [
         "glass",
@@ -542,6 +558,22 @@ export const T = {
         "أكيد. من أنطلياس منوصل لكل لبنان — جونية، جبيل، البترون، فاريا، الأرز، بعلبك، الجنوب — مشوار واحد أو سائق خاص لنهار كامل."
       ],
       [
+        "شو بصير إذا تأخرت الطيارة؟",
+        "ابعت رقم الرحلة وقت تحجز. إذا تأخرت الطيارة، السائق بيستناك وبيعدّل وقت الاستقبال بلا أي كلفة إضافية."
+      ],
+      [
+        "عندكن كراسي أولاد أو أطفال؟",
+        "أكيد. قلّنا وقت تحجز عالواتساب ومنركّب الكرسي قبل ما نوصل."
+      ],
+      [
+        "فيني استأجر سائق لنهار كامل؟",
+        "أكيد. للسياحة، الأعراس أو الشغل، عنا سعر نهار كامل بكل لبنان، متفق عليه قبل ما يبلش النهار."
+      ],
+      [
+        "كيف بدفع؟",
+        "كاش، بالدولار أو بالليرة اللبنانية على سعر اليوم. السعر متفق عليه عالواتساب قبل المشوار."
+      ],
+      [
         "فيني احجز من قبل؟",
         "أكيد، وهيدي أحسن طريقة للطيارات الباكرة، الأعراس ورحلات النهار. ابعت التاريخ والساعة ومنأكّد الحجز."
       ],
@@ -618,7 +650,7 @@ export const X = {
     "t_zero_p": "surprises. Affordable fares, confirmed before you ride.",
     "t_air": "// airport",
     "t_air_h": "Beirut Airport transfers",
-    "t_air_p": "Early departures and late landings. Send your flight — we plan around it.",
+    "t_air_p": "Early departures and late landings. Send your flight — if it's delayed, we wait at no extra charge.",
     "t_safe": "// clean & safe",
     "t_safe_h": "Professional drivers",
     "t_safe_p": "Expert drivers who know every road, and a car kept spotless.",
@@ -682,7 +714,7 @@ export const X = {
     "t_zero_p": "مفاجآت. أسعار مناسبة ومتفق عليها قبل المشوار.",
     "t_air": "المطار",
     "t_air_h": "توصيل مطار بيروت",
-    "t_air_p": "طيارات باكرة ووصول متأخر. ابعت رقم رحلتك ومنرتّب الوقت.",
+    "t_air_p": "طيارات باكرة ووصول متأخر. ابعت رقم رحلتك — وإذا تأخرت، منستنّاك بلا كلفة إضافية.",
     "t_safe": "نظافة وأمان",
     "t_safe_h": "سائقين محترفين",
     "t_safe_p": "سائقين خبرة بيعرفوا كل الطرقات، وسيارة دايماً نضيفة.",
@@ -1464,6 +1496,10 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
   "beirut-airport-taxi": {
     "en": [
       [
+        "What if my flight is delayed?",
+        "We follow your flight number. If the flight is late, your driver waits and adjusts the pickup at no extra charge."
+      ],
+      [
         "How do I book a taxi in Beirut Airport?",
         "Send a WhatsApp or call 70 609 211 with your pickup point, destination and time. The price is confirmed before you ride."
       ],
@@ -1481,6 +1517,10 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ]
     ],
     "ar": [
+      [
+        "شو بصير إذا تأخرت الطيارة؟",
+        "منتابع رقم رحلتك. إذا تأخرت الطيارة، السائق بيستناك وبيعدّل وقت الاستقبال بلا أي كلفة إضافية."
+      ],
       [
         "كيف بحجز تاكسي في مطار بيروت؟",
         "ابعت واتساب أو اتصل عالرقم 70 609 211 مع مكان الانطلاق، الوجهة والوقت. السعر بيتأكّد قبل المشوار."
@@ -1730,6 +1770,10 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
   "lebanon-private-driver": {
     "en": [
       [
+        "Is there a full-day rate?",
+        "Yes. Tell us the places and the number of people, and we agree one price for the whole day before you set off. Child seats on request; pay in USD or LBP."
+      ],
+      [
         "How do I book a taxi in Private driver, Lebanon?",
         "Send a WhatsApp or call 70 609 211 with your pickup point, destination and time. The price is confirmed before you ride."
       ],
@@ -1747,6 +1791,10 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ]
     ],
     "ar": [
+      [
+        "في سعر لنهار كامل؟",
+        "أكيد. قلّنا الأماكن وعدد الأشخاص، ومنتفق على سعر واحد للنهار كلّو قبل ما تنطلق. كراسي أولاد عند الطلب؛ والدفع بالدولار أو بالليرة."
+      ],
       [
         "كيف بحجز تاكسي في سائق خاص بلبنان؟",
         "ابعت واتساب أو اتصل عالرقم 70 609 211 مع مكان الانطلاق، الوجهة والوقت. السعر بيتأكّد قبل المشوار."
