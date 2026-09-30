@@ -43,8 +43,8 @@ export const T = {
     "other": "ar",
     "other_label": "عربي",
     "other_name": "العربية",
-    "title": "Vito Taxi by Charbel — Premium Mercedes Vito Taxi in Antelias, Beirut & Lebanon",
-    "desc": "24/7 taxi in a spacious Mercedes-Benz Vito from Antelias: Beirut Airport transfers, daily rides, trips and events across Lebanon. Rated 4.9 on Google. WhatsApp 70 609 211.",
+    "title": "Vito Taxi by Charbel — Premium 24/7 Taxi in Antelias, Beirut & Lebanon",
+    "desc": "24/7 taxi from Antelias — comfortable sedans and a spacious Mercedes Vito van: Beirut Airport transfers, daily rides, trips and events across Lebanon. Rated 4.9 on Google. WhatsApp 70 609 211.",
     "og_title": "Vito Taxi by Charbel — every ride, first class",
     "tagline": "by Charbel",
     "skip": "Skip to content",
@@ -55,7 +55,7 @@ export const T = {
       ],
       [
         "#vito",
-        "The Vito"
+        "Our fleet"
       ],
       [
         "#book",
@@ -74,7 +74,7 @@ export const T = {
     "book_wa": "Book on WhatsApp",
     "wa_short": "WhatsApp",
     "wa_hello": "Hello Charbel, I would like to book a ride.",
-    "lead": "A spacious, air-conditioned Mercedes-Benz Vito, expert drivers who know every road, and the price confirmed before you set off. Airport transfers, daily rides, trips and events — day or night, from Antelias.",
+    "lead": "Comfortable, air-conditioned cars — sedans for everyday rides and a Mercedes Vito van for groups — expert drivers who know every road, and the price confirmed before you set off. Airport transfers, daily rides, trips and events — day or night, from Antelias.",
     "marquee": [
       "Beirut Airport",
       "Beirut",
@@ -117,7 +117,7 @@ export const T = {
       [
         "group",
         "Families & groups",
-        "A van, not a sedan: the whole family or group rides together, with the luggage in the back instead of on your lap."
+        "Need space? The Vito van takes the whole family or group together, with the luggage in the back instead of on your lap."
       ],
       [
         "brief",
@@ -125,14 +125,14 @@ export const T = {
         "Punctual, discreet pickups for executives, visiting clients and hotel guests. One message and the car is booked."
       ]
     ],
-    "car_k": "The Vito",
-    "car_h": "Space you can *feel.*",
-    "car_p": "The Mercedes-Benz Vito is built for exactly this: a high, quiet cabin, a sliding door that makes getting in effortless, and room left over once everyone is seated.",
+    "car_k": "Our fleet",
+    "car_h": "A car for *every ride.*",
+    "car_p": "Comfortable sedans for one to three passengers and everyday rides, and the Mercedes-Benz Vito van when the whole group travels together. Every car is clean, air-conditioned and driven by a professional.",
     "feats": [
       [
         "seat",
-        "Seats for the group",
-        "Family, friends or colleagues — together in one car."
+        "Sedan or van",
+        "A sedan for everyday rides, the Vito van for families and groups."
       ],
       [
         "bag",
@@ -266,7 +266,7 @@ export const T = {
       ],
       [
         "How many passengers and bags fit?",
-        "The Vito is a van, so a family or a small group rides together with their luggage. Tell us how many people and bags when you book and we confirm it fits."
+        "For one to three passengers a sedan is ideal; for families and groups we send the Vito van, with room for the luggage. Tell us how many people and bags when you book and we send the right car."
       ],
       [
         "Can you drive outside Beirut?",
@@ -286,9 +286,9 @@ export const T = {
       ]
     ],
     "final_k": "Ready when you are",
-    "final_h": "Your Vito is *one message away.*",
+    "final_h": "Your ride is *one message away.*",
     "final_p": "Anywhere, anytime. Tell us where you are and where you are going — we take it from there.",
-    "foot_about": "A 24/7 Mercedes-Benz Vito taxi service based in Antelias, Lebanon — airport transfers, daily rides, trips and events.",
+    "foot_about": "A 24/7 taxi service with comfortable sedans and a Mercedes-Benz Vito van, based in Antelias, Lebanon — airport transfers, daily rides, trips and events.",
     "f_services": "Services",
     "f_areas": "Areas",
     "f_contact": "Contact",
@@ -312,8 +312,8 @@ export const T = {
     "other": "en",
     "other_label": "EN",
     "other_name": "English",
-    "title": "ڤيتو تاكسي مع شربل — تاكسي مرسيدس ڤيتو فاخر في أنطلياس وبيروت ولبنان",
-    "desc": "تاكسي ٢٤/٧ بمرسيدس ڤيتو واسعة من أنطلياس: توصيل مطار بيروت، مشاوير يومية، رحلات ومناسبات بكل لبنان. تقييم ٤٫٩ على Google. واتساب 70 609 211.",
+    "title": "ڤيتو تاكسي مع شربل — تاكسي فاخر ٢٤/٧ في أنطلياس وبيروت ولبنان",
+    "desc": "تاكسي ٢٤/٧ من أنطلياس — سيارات سيدان مريحة وڤان مرسيدس ڤيتو واسع: توصيل مطار بيروت، مشاوير يومية، رحلات ومناسبات بكل لبنان. تقييم ٤٫٩ على Google. واتساب 70 609 211.",
     "og_title": "ڤيتو تاكسي مع شربل — كل مشوار درجة أولى",
     "tagline": "مع شربل",
     "skip": "انتقل إلى المحتوى",
@@ -324,7 +324,7 @@ export const T = {
       ],
       [
         "#vito",
-        "السيارة"
+        "السيارات"
       ],
       [
         "#book",
@@ -343,7 +343,7 @@ export const T = {
     "book_wa": "احجز عالواتساب",
     "wa_short": "واتساب",
     "wa_hello": "مرحبا شربل، بدي احجز مشوار.",
-    "lead": "مرسيدس ڤيتو واسعة ومكيّفة، سائقين محترفين بيعرفوا كل الطرقات، والسعر متفق عليه قبل ما تنطلق. توصيل مطار، مشاوير يومية، رحلات ومناسبات — ليل نهار، انطلاقاً من أنطلياس.",
+    "lead": "سيارات مريحة ومكيّفة — سيدان للمشاوير اليومية وڤان مرسيدس ڤيتو للمجموعات — سائقين محترفين بيعرفوا كل الطرقات، والسعر متفق عليه قبل ما تنطلق. توصيل مطار، مشاوير يومية، رحلات ومناسبات — ليل نهار، انطلاقاً من أنطلياس.",
     "marquee": [
       "مطار بيروت",
       "بيروت",
@@ -386,7 +386,7 @@ export const T = {
       [
         "group",
         "عائلات ومجموعات",
-        "ڤان مش سيارة صغيرة: العيلة كلها أو الشلة بتقعد سوا، والشنط بالخلف مش بحضنك."
+        "بدك مساحة؟ الڤيتو ڤان بتاخد العيلة كلها أو الشلة سوا، والشنط بالخلف مش بحضنك."
       ],
       [
         "brief",
@@ -394,14 +394,14 @@ export const T = {
         "توصيل دقيق وراقي لرجال الأعمال، الزوار وضيوف الفنادق. رسالة وحدة والسيارة محجوزة."
       ]
     ],
-    "car_k": "السيارة",
-    "car_h": "راحة *بتحسّ فيها.*",
-    "car_p": "المرسيدس ڤيتو معمولة لهيدا بالزبط: مقصورة عالية وهادية، باب جانبي منزلق بيسهّل الطلعة، ومساحة زيادة بعد ما يقعد الكل.",
+    "car_k": "أسطولنا",
+    "car_h": "سيارة *لكل مشوار.*",
+    "car_p": "سيارات سيدان مريحة لراكب لتلاتة وللمشاوير اليومية، والڤان مرسيدس-بنز ڤيتو لما المجموعة كلها مسافرة سوا. كل سياراتنا نضيفة، مكيّفة ومع سائق محترف.",
     "feats": [
       [
         "seat",
-        "مقاعد للمجموعة",
-        "العيلة، الأصحاب أو الزملاء — سوا بسيارة وحدة."
+        "سيدان أو ڤان",
+        "سيدان للمشاوير اليومية، والڤيتو ڤان للعائلات والمجموعات."
       ],
       [
         "bag",
@@ -535,7 +535,7 @@ export const T = {
       ],
       [
         "قدّيش ركاب وشنط بتساع؟",
-        "الڤيتو ڤان، يعني العيلة أو مجموعة صغيرة بتقعد سوا مع شنطها. قلّنا عدد الركاب والشنط وقت الحجز ومنأكّدلك."
+        "لراكب لتلاتة السيدان مثالية؛ وللعائلات والمجموعات منبعت الڤيتو ڤان مع محل للشنط. قلّنا عدد الركاب والشنط وقت الحجز ومنبعتلك السيارة المناسبة."
       ],
       [
         "فيكن تسوقوا لبرّا بيروت؟",
@@ -555,9 +555,9 @@ export const T = {
       ]
     ],
     "final_k": "جاهزين وقت ما بدك",
-    "final_h": "الڤيتو تبعك *على بُعد رسالة.*",
+    "final_h": "مشوارك *على بُعد رسالة.*",
     "final_p": "بأي مكان وبأي وقت. قلّنا وين إنت ولوين رايح — والباقي علينا.",
-    "foot_about": "خدمة تاكسي ٢٤/٧ بمرسيدس-بنز ڤيتو، مركزها أنطلياس، لبنان — توصيل مطار، مشاوير يومية، رحلات ومناسبات.",
+    "foot_about": "خدمة تاكسي ٢٤/٧ بسيارات سيدان مريحة وڤان مرسيدس-بنز ڤيتو، مركزها أنطلياس، لبنان — توصيل مطار، مشاوير يومية، رحلات ومناسبات.",
     "f_services": "الخدمات",
     "f_areas": "المناطق",
     "f_contact": "تواصل",
@@ -595,6 +595,9 @@ export const X = {
       "Pick a date on WhatsApp"
     ],
     "q_pax": "passengers",
+    "f_car": "Car",
+    "car_opts": ["Any car", "Sedan", "Vito van (groups)"],
+    "car_msg": "Car",
     "q_btn": "Get my fare",
     "q_note": "Nothing is stored on this site",
     "explore": "Explore services",
@@ -605,9 +608,9 @@ export const X = {
     "t_rate_p": "from {n} reviews on Google Maps",
     "t_247": "// always on",
     "t_247_p": "Day, night, weekends and holidays. Rain or shine.",
-    "t_car": "// the car",
-    "t_car_h": "Mercedes-Benz Vito",
-    "t_car_p": "Spacious, air-conditioned and spotless — built for comfort.",
+    "t_car": "// the fleet",
+    "t_car_h": "Sedans & the Vito van",
+    "t_car_p": "From everyday sedans to the Mercedes Vito van — air-conditioned, spotless, built for comfort.",
     "t_reg": "// coverage",
     "t_reg_p": "regions — from Antelias to the Cedars.",
     "t_zero": "// pricing",
@@ -656,6 +659,9 @@ export const X = {
       "منحدد عالواتساب"
     ],
     "q_pax": "ركاب",
+    "f_car": "السيارة",
+    "car_opts": ["أي سيارة", "سيدان", "ڤيتو ڤان (مجموعات)"],
+    "car_msg": "السيارة",
     "q_btn": "بدي سعري",
     "q_note": "ما في شي بينحفظ عهالموقع",
     "explore": "شوف الخدمات",
@@ -666,9 +672,9 @@ export const X = {
     "t_rate_p": "من {n} تقييم على Google Maps",
     "t_247": "دايماً موجودين",
     "t_247_p": "ليل ونهار، ويك إند وأعياد. شتي أو شمس.",
-    "t_car": "السيارة",
-    "t_car_h": "مرسيدس-بنز ڤيتو",
-    "t_car_p": "واسعة، مكيّفة ونضيفة — معمولة لراحتك.",
+    "t_car": "أسطولنا",
+    "t_car_h": "سيدان وڤيتو ڤان",
+    "t_car_p": "من السيدان للمشاوير اليومية للڤان مرسيدس ڤيتو — مكيّفة، نضيفة ومعمولة لراحتك.",
     "t_reg": "التغطية",
     "t_reg_p": "مناطق — من أنطلياس للأرز.",
     "t_zero": "السعر",
@@ -715,12 +721,12 @@ export const AREAS = [
     "ar_sub": "مركزنا — النقاش، الرابية، ضبية",
     "en_title": "Taxi in Antelias — Vito Taxi by Charbel",
     "ar_title": "تاكسي في أنطلياس — ڤيتو تاكسي مع شربل",
-    "en_desc": "Premium taxi in Antelias, Naccache, Rabieh, Dbayeh and Jal el Dib. Black Mercedes Vito, price confirmed before you ride. Call or WhatsApp 70 609 211.",
-    "ar_desc": "تاكسي فاخر بأنطلياس، النقاش، الرابية، ضبية وجل الديب. مرسيدس ڤيتو سوداء والسعر متفق عليه قبل المشوار. اتصل أو واتساب 70 609 211.",
+    "en_desc": "Premium taxi in Antelias, Naccache, Rabieh, Dbayeh and Jal el Dib. Comfortable sedans and a Mercedes Vito van, price confirmed before you ride. Call or WhatsApp 70 609 211.",
+    "ar_desc": "تاكسي فاخر بأنطلياس، النقاش، الرابية، ضبية وجل الديب. سيارات سيدان وڤان مرسيدس ڤيتو والسعر متفق عليه قبل المشوار. اتصل أو واتساب 70 609 211.",
     "en_h1": "Taxi in *Antelias.*",
     "ar_h1": "تاكسي في *أنطلياس.*",
-    "en_lede": "Antelias is home, so pickups here and in the neighbouring towns are the quickest we do. One message and the Vito is on its way.",
-    "ar_lede": "أنطلياس هي مركزنا، فالمشوار من هون ومن البلدات الجارة هو الأسرع. رسالة وحدة والڤيتو جايي.",
+    "en_lede": "Antelias is home, so pickups here and in the neighbouring towns are the quickest we do. One message and the car is on its way.",
+    "ar_lede": "أنطلياس هي مركزنا، فالمشوار من هون ومن البلدات الجارة هو الأسرع. رسالة وحدة والسيارة جايي.",
     "en_body": [
       "Being based on the coastal road means the whole of the Metn coast is minutes away: Naccache and Rabieh above, Dbayeh and the Waterfront to the north, Jal el Dib and Zalka to the south. Beirut is a short run down the highway, and the airport is a straight line from here.",
       "Tell us the building, the church or the shop you are next to and that is usually enough. Whether it is a school run, a meeting in Beirut or a late dinner in Dbayeh, the price is confirmed before you get in."
@@ -792,12 +798,12 @@ export const AREAS = [
     "ar_sub": "وصول ومغادرة",
     "en_title": "Beirut Airport Taxi — Private Transfers by Vito Taxi",
     "ar_title": "تاكسي مطار بيروت — توصيل خاص مع ڤيتو تاكسي",
-    "en_desc": "Private Beirut Airport (BEY) taxi transfers in a Mercedes Vito, with room for all your luggage. Book ahead on WhatsApp 70 609 211 — price confirmed in advance.",
-    "ar_desc": "توصيل خاص من وإلى مطار بيروت بمرسيدس ڤيتو مع محل لكل الشنط. احجز مسبقاً عالواتساب 70 609 211 — السعر متفق عليه سلفاً.",
+    "en_desc": "Private Beirut Airport (BEY) taxi transfers by sedan or Mercedes Vito van, with room for all your luggage. Book ahead on WhatsApp 70 609 211 — price confirmed in advance.",
+    "ar_desc": "توصيل خاص من وإلى مطار بيروت بسيارة سيدان أو ڤان مرسيدس ڤيتو مع محل لكل الشنط. احجز مسبقاً عالواتساب 70 609 211 — السعر متفق عليه سلفاً.",
     "en_h1": "Beirut Airport, *handled.*",
     "ar_h1": "مطار بيروت، *علينا.*",
-    "en_lede": "Transfers to and from Beirut–Rafic Hariri International Airport in a spacious Mercedes-Benz Vito. Send your flight and relax — the car is planned around it.",
-    "ar_lede": "توصيل من وإلى مطار رفيق الحريري الدولي بمرسيدس-بنز ڤيتو واسعة. ابعت رقم رحلتك وارتاح — الوقت منرتّبو على أساسها.",
+    "en_lede": "Transfers to and from Beirut–Rafic Hariri International Airport in a comfortable sedan or the spacious Mercedes-Benz Vito van. Send your flight and relax — the car is planned around it.",
+    "ar_lede": "توصيل من وإلى مطار رفيق الحريري الدولي بسيارة سيدان مريحة أو ڤان مرسيدس-بنز ڤيتو واسع. ابعت رقم رحلتك وارتاح — الوقت منرتّبو على أساسها.",
     "en_body": [
       "An airport run is the one ride worth booking the day before. Tell us your flight time rather than a pickup time and we work backwards from it, traffic included — the early-morning departures that nobody else wants to drive are exactly the ones we plan for.",
       "Landing? Send your flight number and terminal. A van means the suitcases, the stroller and the duty-free all fit, and a family arriving together leaves together. The fare is confirmed before you fly, so there is nothing to negotiate at arrivals."
@@ -867,14 +873,14 @@ export const AREAS = [
     "ar": "بيروت",
     "en_sub": "Achrafieh, Hamra, Downtown, Gemmayzeh",
     "ar_sub": "الأشرفية، الحمرا، الوسط، الجميزة",
-    "en_title": "Taxi in Beirut — Premium Mercedes Vito | Vito Taxi by Charbel",
-    "ar_title": "تاكسي في بيروت — مرسيدس ڤيتو فاخرة | ڤيتو تاكسي مع شربل",
-    "en_desc": "Premium taxi across Beirut — Achrafieh, Hamra, Downtown, Gemmayzeh, Verdun. Black Mercedes Vito, price confirmed first. WhatsApp or call 70 609 211.",
-    "ar_desc": "تاكسي فاخر بكل بيروت — الأشرفية، الحمرا، الوسط، الجميزة، فردان. مرسيدس ڤيتو سوداء والسعر أولاً. واتساب أو اتصل 70 609 211.",
+    "en_title": "Taxi in Beirut — Premium Rides | Vito Taxi by Charbel",
+    "ar_title": "تاكسي في بيروت — مشاوير فاخرة | ڤيتو تاكسي مع شربل",
+    "en_desc": "Premium taxi across Beirut — Achrafieh, Hamra, Downtown, Gemmayzeh, Verdun. Sedans and a Mercedes Vito van, price confirmed first. WhatsApp or call 70 609 211.",
+    "ar_desc": "تاكسي فاخر بكل بيروت — الأشرفية، الحمرا، الوسط، الجميزة، فردان. سيارات سيدان وڤان مرسيدس ڤيتو والسعر أولاً. واتساب أو اتصل 70 609 211.",
     "en_h1": "Beirut, *door to door.*",
     "ar_h1": "بيروت، *من الباب للباب.*",
-    "en_lede": "Meetings in Downtown, dinner in Gemmayzeh, a hotel in Achrafieh or Hamra — rides across the capital in a calm, air-conditioned Mercedes Vito.",
-    "ar_lede": "اجتماع بالوسط، عشاء بالجميزة، فندق بالأشرفية أو الحمرا — مشاوير بكل العاصمة بمرسيدس ڤيتو هادية ومكيّفة.",
+    "en_lede": "Meetings in Downtown, dinner in Gemmayzeh, a hotel in Achrafieh or Hamra — rides across the capital in a calm, air-conditioned car.",
+    "ar_lede": "اجتماع بالوسط، عشاء بالجميزة، فندق بالأشرفية أو الحمرا — مشاوير بكل العاصمة بسيارات هادية ومكيّفة.",
     "en_body": [
       "Beirut traffic is a timing problem, not a distance problem. Knowing which road is moving at eight in the morning and which one at eight at night is the difference between arriving calm and arriving late.",
       "For evenings out, book the ride home at the same time as the ride there. For visitors staying in the city, one number covers the airport, the day trips and everything in between."
@@ -946,8 +952,8 @@ export const AREAS = [
     "ar_sub": "الكسليك، الذوق، حريصا، المعاملتين",
     "en_title": "Taxi in Jounieh & Kaslik — Vito Taxi by Charbel",
     "ar_title": "تاكسي في جونية والكسليك — ڤيتو تاكسي مع شربل",
-    "en_desc": "Premium taxi in Jounieh, Kaslik, Zouk, Maameltein and up to Harissa. Mercedes Vito with room for everyone. Book on WhatsApp 70 609 211.",
-    "ar_desc": "تاكسي فاخر بجونية، الكسليك، الذوق، المعاملتين وطلوعاً لحريصا. مرسيدس ڤيتو في فيها محل للكل. احجز عالواتساب 70 609 211.",
+    "en_desc": "Premium taxi in Jounieh, Kaslik, Zouk, Maameltein and up to Harissa. Sedans, and a Mercedes Vito van with room for everyone. Book on WhatsApp 70 609 211.",
+    "ar_desc": "تاكسي فاخر بجونية، الكسليك، الذوق، المعاملتين وطلوعاً لحريصا. سيدان، وڤان مرسيدس ڤيتو في فيه محل للكل. احجز عالواتساب 70 609 211.",
     "en_h1": "Jounieh, *in style.*",
     "ar_h1": "جونية، *بأناقة.*",
     "en_lede": "Across the bay — Kaslik, Zouk, Ghadir, Maameltein — and up the hill to Harissa. Nights out, weddings and the ride home.",
@@ -1021,10 +1027,10 @@ export const AREAS = [
     "ar": "جبيل",
     "en_sub": "The old souk, the port, Amchit",
     "ar_sub": "السوق القديم، المرفأ، عمشيت",
-    "en_title": "Taxi to Byblos (Jbeil) — Private Mercedes Vito | Vito Taxi",
-    "ar_title": "تاكسي إلى جبيل — مرسيدس ڤيتو خاصة | ڤيتو تاكسي",
-    "en_desc": "Private taxi to and from Byblos (Jbeil) — the old souk, the port, Amchit — from Beirut, Antelias or the airport. Mercedes Vito. WhatsApp 70 609 211.",
-    "ar_desc": "تاكسي خاص من وإلى جبيل — السوق القديم، المرفأ، عمشيت — من بيروت، أنطلياس أو المطار. مرسيدس ڤيتو. واتساب 70 609 211.",
+    "en_title": "Taxi to Byblos (Jbeil) — Private Rides | Vito Taxi",
+    "ar_title": "تاكسي إلى جبيل — مشاوير خاصة | ڤيتو تاكسي",
+    "en_desc": "Private taxi to and from Byblos (Jbeil) — the old souk, the port, Amchit — from Beirut, Antelias or the airport. Sedan or Vito van. WhatsApp 70 609 211.",
+    "ar_desc": "تاكسي خاص من وإلى جبيل — السوق القديم، المرفأ، عمشيت — من بيروت، أنطلياس أو المطار. سيدان أو ڤيتو ڤان. واتساب 70 609 211.",
     "en_h1": "Byblos, *unhurried.*",
     "ar_h1": "جبيل، *عراحتك.*",
     "en_lede": "The oldest city on the coast deserves an easy ride there. Rides to Byblos from Antelias, Beirut or the airport — or a driver who waits while you explore.",
@@ -1100,8 +1106,8 @@ export const AREAS = [
     "ar_sub": "برمانا، بيت مري، بكفيا",
     "en_title": "Taxi in the Metn — Broumana, Beit Mery, Bikfaya | Vito Taxi",
     "ar_title": "تاكسي بالمتن — برمانا، بيت مري، بكفيا | ڤيتو تاكسي",
-    "en_desc": "Premium taxi across the Metn — Broumana, Beit Mery, Bikfaya, Mansourieh, Jdeideh. Based in Antelias. Mercedes Vito, WhatsApp 70 609 211.",
-    "ar_desc": "تاكسي فاخر بكل المتن — برمانا، بيت مري، بكفيا، المنصورية، الجديدة. مركزنا أنطلياس. مرسيدس ڤيتو، واتساب 70 609 211.",
+    "en_desc": "Premium taxi across the Metn — Broumana, Beit Mery, Bikfaya, Mansourieh, Jdeideh. Based in Antelias. Sedans and Vito van, WhatsApp 70 609 211.",
+    "ar_desc": "تاكسي فاخر بكل المتن — برمانا، بيت مري، بكفيا، المنصورية، الجديدة. مركزنا أنطلياس. سيدان وڤيتو ڤان، واتساب 70 609 211.",
     "en_h1": "The Metn, *coast to hills.*",
     "ar_h1": "المتن، *من البحر للجبل.*",
     "en_lede": "From the coast up to Broumana, Beit Mery and Bikfaya — hill roads we drive every day, starting just below them in Antelias.",
@@ -1175,10 +1181,10 @@ export const AREAS = [
     "ar": "البترون",
     "en_sub": "The old town, the beaches, the nights",
     "ar_sub": "البلدة القديمة، البحر، السهرات",
-    "en_title": "Taxi to Batroun — Private Mercedes Vito | Vito Taxi by Charbel",
-    "ar_title": "تاكسي إلى البترون — مرسيدس ڤيتو خاصة | ڤيتو تاكسي مع شربل",
-    "en_desc": "Private taxi to Batroun from Beirut, Antelias or the airport — beach days, weddings, nights out and the safe ride home. Mercedes Vito. WhatsApp 70 609 211.",
-    "ar_desc": "تاكسي خاص للبترون من بيروت، أنطلياس أو المطار — نهارات بحر، أعراس، سهرات ورجعة آمنة. مرسيدس ڤيتو. واتساب 70 609 211.",
+    "en_title": "Taxi to Batroun — Private Rides | Vito Taxi by Charbel",
+    "ar_title": "تاكسي إلى البترون — مشاوير خاصة | ڤيتو تاكسي مع شربل",
+    "en_desc": "Private taxi to Batroun from Beirut, Antelias or the airport — beach days, weddings, nights out and the safe ride home. Sedan or Vito van. WhatsApp 70 609 211.",
+    "ar_desc": "تاكسي خاص للبترون من بيروت، أنطلياس أو المطار — نهارات بحر، أعراس، سهرات ورجعة آمنة. سيدان أو ڤيتو ڤان. واتساب 70 609 211.",
     "en_h1": "Batroun, *and back.*",
     "ar_h1": "البترون، *وبالرجعة.*",
     "en_lede": "Beach clubs by day, the old town by night, and a driver for the long way home. Rides to Batroun for groups, couples and wedding guests.",
@@ -1254,8 +1260,8 @@ export const AREAS = [
     "ar_sub": "تزلج، شاليهات، ويك إند بالجبل",
     "en_title": "Taxi to Faraya & Mzaar Ski Resort — Vito Taxi by Charbel",
     "ar_title": "تاكسي إلى فاريا ومزار كفرذبيان — ڤيتو تاكسي مع شربل",
-    "en_desc": "Private taxi to Faraya, Mzaar Kfardebian and the Kesrouan mountains — room for skis and the whole group. Mercedes Vito from Antelias. WhatsApp 70 609 211.",
-    "ar_desc": "تاكسي خاص لفاريا، مزار كفرذبيان وجبال كسروان — محل للسكي وللمجموعة كلها. مرسيدس ڤيتو من أنطلياس. واتساب 70 609 211.",
+    "en_desc": "Private taxi to Faraya, Mzaar Kfardebian and the Kesrouan mountains — room for skis and the whole group. Sedans and a Vito van from Antelias. WhatsApp 70 609 211.",
+    "ar_desc": "تاكسي خاص لفاريا، مزار كفرذبيان وجبال كسروان — محل للسكي وللمجموعة كلها. سيدان وڤيتو ڤان من أنطلياس. واتساب 70 609 211.",
     "en_h1": "Up to the *snow.*",
     "ar_h1": "طلوعاً *عالتلج.*",
     "en_lede": "Ski days at Mzaar, chalet weekends in Faraya, and a warm car waiting at the end of the day. Skis, boots and the whole group included.",
@@ -1329,14 +1335,14 @@ export const AREAS = [
     "ar": "سائق خاص بلبنان",
     "en_sub": "Day trips: Cedars, Baalbek, the south",
     "ar_sub": "رحلات نهار: الأرز، بعلبك، الجنوب",
-    "en_title": "Private Driver in Lebanon — Day Trips by Mercedes Vito | Vito Taxi",
-    "ar_title": "سائق خاص بلبنان — رحلات نهار بمرسيدس ڤيتو | ڤيتو تاكسي",
-    "en_desc": "Hire a private driver in Lebanon for the day: Jeita, Harissa, Byblos, the Cedars, Baalbek, Tyre and Sidon in a Mercedes Vito. One price for the day. WhatsApp 70 609 211.",
-    "ar_desc": "سائق خاص بلبنان لنهار كامل: جعيتا، حريصا، جبيل، الأرز، بعلبك، صور وصيدا بمرسيدس ڤيتو. سعر واحد للنهار. واتساب 70 609 211.",
+    "en_title": "Private Driver in Lebanon — Day Trips by Sedan or Van | Vito Taxi",
+    "ar_title": "سائق خاص بلبنان — رحلات نهار بسيدان أو ڤان | ڤيتو تاكسي",
+    "en_desc": "Hire a private driver in Lebanon for the day: Jeita, Harissa, Byblos, the Cedars, Baalbek, Tyre and Sidon in a comfortable sedan or a Mercedes Vito van. One price for the day. WhatsApp 70 609 211.",
+    "ar_desc": "سائق خاص بلبنان لنهار كامل: جعيتا، حريصا، جبيل، الأرز، بعلبك، صور وصيدا بسيارة سيدان مريحة أو ڤان مرسيدس ڤيتو. سعر واحد للنهار. واتساب 70 609 211.",
     "en_h1": "Lebanon, *your way.*",
     "ar_h1": "لبنان، *عطريقتك.*",
-    "en_lede": "A private driver and a spacious Mercedes Vito for the whole day. You choose the places; we handle the roads, the timing and the parking.",
-    "ar_lede": "سائق خاص ومرسيدس ڤيتو واسعة لنهار كامل. إنت بتختار الأماكن، ونحنا منهتم بالطرقات، الوقت والصفّة.",
+    "en_lede": "A private driver and a comfortable car — sedan or Vito van — for the whole day. You choose the places; we handle the roads, the timing and the parking.",
+    "ar_lede": "سائق خاص وسيارة مريحة — سيدان أو ڤيتو ڤان — لنهار كامل. إنت بتختار الأماكن، ونحنا منهتم بالطرقات، الوقت والصفّة.",
     "en_body": [
       "Lebanon is small on a map and long on the road. A day that takes in Jeita Grotto, Harissa and Byblos, or the Cedars and the Qadisha valley, or Baalbek and a lunch in Zahle, is easy with a driver and exhausting without one.",
       "Send us the places you want to see and the number of people. We suggest an order that makes sense, and quote the day as one price before you commit."
@@ -1429,7 +1435,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "Can you take a group with luggage?",
-        "Yes. The Mercedes-Benz Vito is a van, so families and small groups ride together with their bags. Tell us the numbers when you book."
+        "Yes. For groups we send the Mercedes-Benz Vito van, so families and small groups ride together with their bags. Tell us the numbers when you book."
       ],
       [
         "Can I book the return trip too?",
@@ -1447,7 +1453,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "فيكن تاخدوا مجموعة مع شنط؟",
-        "أكيد. المرسيدس ڤيتو ڤان، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
+        "أكيد. للمجموعات منبعت الڤان مرسيدس-بنز ڤيتو، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
       ],
       [
         "فيني احجز الرجعة كمان؟",
@@ -1467,7 +1473,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "Can you take a group with luggage?",
-        "Yes. The Mercedes-Benz Vito is a van, so families and small groups ride together with their bags. Tell us the numbers when you book."
+        "Yes. For groups we send the Mercedes-Benz Vito van, so families and small groups ride together with their bags. Tell us the numbers when you book."
       ],
       [
         "Can I book the return trip too?",
@@ -1485,7 +1491,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "فيكن تاخدوا مجموعة مع شنط؟",
-        "أكيد. المرسيدس ڤيتو ڤان، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
+        "أكيد. للمجموعات منبعت الڤان مرسيدس-بنز ڤيتو، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
       ],
       [
         "فيني احجز الرجعة كمان؟",
@@ -1505,7 +1511,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "Can you take a group with luggage?",
-        "Yes. The Mercedes-Benz Vito is a van, so families and small groups ride together with their bags. Tell us the numbers when you book."
+        "Yes. For groups we send the Mercedes-Benz Vito van, so families and small groups ride together with their bags. Tell us the numbers when you book."
       ],
       [
         "Can I book the return trip too?",
@@ -1523,7 +1529,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "فيكن تاخدوا مجموعة مع شنط؟",
-        "أكيد. المرسيدس ڤيتو ڤان، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
+        "أكيد. للمجموعات منبعت الڤان مرسيدس-بنز ڤيتو، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
       ],
       [
         "فيني احجز الرجعة كمان؟",
@@ -1543,7 +1549,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "Can you take a group with luggage?",
-        "Yes. The Mercedes-Benz Vito is a van, so families and small groups ride together with their bags. Tell us the numbers when you book."
+        "Yes. For groups we send the Mercedes-Benz Vito van, so families and small groups ride together with their bags. Tell us the numbers when you book."
       ],
       [
         "Can I book the return trip too?",
@@ -1561,7 +1567,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "فيكن تاخدوا مجموعة مع شنط؟",
-        "أكيد. المرسيدس ڤيتو ڤان، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
+        "أكيد. للمجموعات منبعت الڤان مرسيدس-بنز ڤيتو، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
       ],
       [
         "فيني احجز الرجعة كمان؟",
@@ -1581,7 +1587,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "Can you take a group with luggage?",
-        "Yes. The Mercedes-Benz Vito is a van, so families and small groups ride together with their bags. Tell us the numbers when you book."
+        "Yes. For groups we send the Mercedes-Benz Vito van, so families and small groups ride together with their bags. Tell us the numbers when you book."
       ],
       [
         "Can I book the return trip too?",
@@ -1599,7 +1605,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "فيكن تاخدوا مجموعة مع شنط؟",
-        "أكيد. المرسيدس ڤيتو ڤان، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
+        "أكيد. للمجموعات منبعت الڤان مرسيدس-بنز ڤيتو، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
       ],
       [
         "فيني احجز الرجعة كمان؟",
@@ -1619,7 +1625,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "Can you take a group with luggage?",
-        "Yes. The Mercedes-Benz Vito is a van, so families and small groups ride together with their bags. Tell us the numbers when you book."
+        "Yes. For groups we send the Mercedes-Benz Vito van, so families and small groups ride together with their bags. Tell us the numbers when you book."
       ],
       [
         "Can I book the return trip too?",
@@ -1637,7 +1643,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "فيكن تاخدوا مجموعة مع شنط؟",
-        "أكيد. المرسيدس ڤيتو ڤان، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
+        "أكيد. للمجموعات منبعت الڤان مرسيدس-بنز ڤيتو، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
       ],
       [
         "فيني احجز الرجعة كمان؟",
@@ -1657,7 +1663,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "Can you take a group with luggage?",
-        "Yes. The Mercedes-Benz Vito is a van, so families and small groups ride together with their bags. Tell us the numbers when you book."
+        "Yes. For groups we send the Mercedes-Benz Vito van, so families and small groups ride together with their bags. Tell us the numbers when you book."
       ],
       [
         "Can I book the return trip too?",
@@ -1675,7 +1681,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "فيكن تاخدوا مجموعة مع شنط؟",
-        "أكيد. المرسيدس ڤيتو ڤان، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
+        "أكيد. للمجموعات منبعت الڤان مرسيدس-بنز ڤيتو، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
       ],
       [
         "فيني احجز الرجعة كمان؟",
@@ -1695,7 +1701,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "Can you take a group with luggage?",
-        "Yes. The Mercedes-Benz Vito is a van, so families and small groups ride together with their bags. Tell us the numbers when you book."
+        "Yes. For groups we send the Mercedes-Benz Vito van, so families and small groups ride together with their bags. Tell us the numbers when you book."
       ],
       [
         "Can I book the return trip too?",
@@ -1713,7 +1719,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "فيكن تاخدوا مجموعة مع شنط؟",
-        "أكيد. المرسيدس ڤيتو ڤان، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
+        "أكيد. للمجموعات منبعت الڤان مرسيدس-بنز ڤيتو، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
       ],
       [
         "فيني احجز الرجعة كمان؟",
@@ -1733,7 +1739,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "Can you take a group with luggage?",
-        "Yes. The Mercedes-Benz Vito is a van, so families and small groups ride together with their bags. Tell us the numbers when you book."
+        "Yes. For groups we send the Mercedes-Benz Vito van, so families and small groups ride together with their bags. Tell us the numbers when you book."
       ],
       [
         "Can I book the return trip too?",
@@ -1751,7 +1757,7 @@ export const AREA_FAQ: Record<string, Record<Lang, string[][]>> = {
       ],
       [
         "فيكن تاخدوا مجموعة مع شنط؟",
-        "أكيد. المرسيدس ڤيتو ڤان، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
+        "أكيد. للمجموعات منبعت الڤان مرسيدس-بنز ڤيتو، يعني العائلات والمجموعات الصغيرة بتقعد سوا مع شنطها. قلّنا العدد وقت الحجز."
       ],
       [
         "فيني احجز الرجعة كمان؟",

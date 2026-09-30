@@ -24,7 +24,7 @@ h1 em{background:linear-gradient(135deg,#FFE9A8,#F5B82E 45%,#D9951B 75%,#B7811A)
 </style></head><body><div class="bg"></div><div class="in">
 <div class="brand">${mark}<div><b>VITO TAXI</b><small>BY CHARBEL</small></div></div>
 <h1>Your comfort,<br><em>our priority.</em></h1></div>
-<div class="row"><span class="pill gold">WhatsApp +961 70 609 211</span><span class="pill">24/7 · Mercedes Vito · ★ 4.9</span></div>
+<div class="row"><span class="pill gold">WhatsApp +961 70 609 211</span><span class="pill">24/7 · Sedans &amp; Vito van · ★ 4.9</span></div>
 </body></html>`;
 const icon = `<!doctype html><html><head><style>html,body{margin:0}body{width:512px;height:512px;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#1a1407,#060607 70%)}svg{width:420px;height:420px}</style></head><body>${mark}</body></html>`;
 

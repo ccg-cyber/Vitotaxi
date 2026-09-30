@@ -35,7 +35,7 @@ export function Booking() {
     const line = (k: string, val: string) => (val ? `• ${k}: ${val}` : null)
     const trips = j.trips as Record<string, string>
     const lines = [j.hello, line(j.type, trips[trip]), line(j.from, v('from')), line(j.to, v('to')),
-      line(j.when, [v('date'), v('time')].filter(Boolean).join(' ') || j.now), line(j.pax, v('pax')), line(j.bags, v('bags')),
+      line(j.when, [v('date'), v('time')].filter(Boolean).join(' ') || j.now), line(x.car_msg, v('car') && v('car') !== x.car_opts[0] ? v('car') : ''), line(j.pax, v('pax')), line(j.bags, v('bags')),
       trip === 'airport' ? line(j.flight, v('flight')) : null, line(j.name, v('name')), line(j.notes, v('notes')), '', j.price]
     window.open(waLink(lines.filter(l => l !== null).join('\n')), '_blank', 'noopener')
   }
@@ -100,6 +100,8 @@ export function Booking() {
                 <div className="grid gap-2"><Label htmlFor="f-bags" className={label}>{t.f_bags}</Label>
                   <select id="f-bags" name="bags" defaultValue="1" className={cn(field, 'select-native w-full border')}>{t.bags_opts.map(o => <option key={o}>{o}</option>)}</select></div>
               </div>
+              <div className="grid gap-2"><Label htmlFor="f-car" className={label}>{x.f_car}</Label>
+                <select id="f-car" name="car" defaultValue={x.car_opts[0]} className={cn(field, 'select-native w-full border')}>{x.car_opts.map(o => <option key={o}>{o}</option>)}</select></div>
               {trip === 'airport' && (
                 <div className="grid gap-2"><Label htmlFor="f-flight" className={label}>{t.f_flight}</Label><Input id="f-flight" name="flight" placeholder={t.f_flight_ph} autoCapitalize="characters" className={field} /></div>
               )}
